@@ -1,0 +1,596 @@
+.outerSection {
+  /* height: 850vh; */
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  margin-top: 2em;
+  font-family: "Poppins", "sans-serif";
+}
+.LeftSection {
+  border: 2px solid rgba(128, 128, 128, 0.29);
+  width: 55%;
+  margin-left: 7em;
+  margin-right: 2em;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.352);
+}
+.LeftSection h1 {
+  font-weight: 500;
+}
+.TopTextsection {
+  text-align: center;
+  padding: 0px 40px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.29);
+}
+p {
+  text-align: justify;
+}
+/* Form */
+.Step {
+  padding: 2em 3em 4em 3em;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.29);
+}
+/* Step1 */
+.PersonalDiv {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+}
+.PersonalDiv input {
+  width: 90%;
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+}
+.griditem input:focus,
+.griditem input:hover {
+  border: 2px solid rgba(128, 128, 128, 0.29);
+}
+/*  Step Two*/
+.HomeDiv {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  gap: 10px 10px;
+}
+.HomeDiv input {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+}
+.HomeDiv select {
+  width: 100%;
+  color: grey;
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+}
+
+/* Step3 */
+.ServiceDiv {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  gap: 10px 20px;
+}
+.ServiceDiv input {
+  width: 96%;
+  color: grey;
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+}
+.ServiceDiv select {
+  width: 100%;
+  color: grey;
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+}
+
+/* Extra */
+.ExtraDiv {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  gap: 10px 20px;
+}
+.ExtraDiv .griditem {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  padding: 7px 0px;
+  height: 150px;
+  /* border: 2px solid rgba(128, 128, 128, 0.29); */
+}
+.ExtraDiv .griditem p {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+.ExtraDiv .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 0px;
+  height: 70px;
+  width: 120px;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+  /* visibility: hidden; */
+  z-index: 2;
+}
+
+.ExtraDiv .griditem .spinnerinput {
+  width: 40%;
+  /* width: 20%; */
+}
+.noneDisplay {
+  display: none;
+}
+.noDisplay {
+  visibility: hidden;
+}
+.Display {
+  visibility: initial;
+}
+
+.ExtraDiv input {
+  width: 96%;
+  color: grey;
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+}
+.ExtraDiv select {
+  width: 100%;
+  color: grey;
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+}
+.ExtraDiv .icons:hover {
+  border: 2px solid #f26a82;
+}
+
+.clicked {
+  background-color: #f26a82;
+  color: white;
+}
+.tooltip {
+  position: relative;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 5px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 999;
+  top: 60%;
+  left: 35%;
+  margin-left: -60px;
+  font-size: 10px;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/* Date */
+.PersonalDiv select {
+  width: 100%;
+  color: grey;
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+}
+#dateDiv {
+  margin-top: 5px;
+  text-align: left;
+}
+.griditem span {
+  display: block;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+}
+/*  */
+.DiscountDiv {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+}
+/* .DiscountDiv input {
+  width: 90%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+} */
+.DiscountDiv .Discountbtn {
+  padding: 15px 17px;
+  font-size: 15px;
+  margin: 7px;
+  background-color: white;
+  color: #f26a82;
+  border: 2px solid #f26a82;
+  border-radius: 5px;
+}
+.DiscountDiv .Discountbtn:hover {
+  padding: 15px 17px;
+  border: 2px solid #f26a82;
+  background-color: #f26a82;
+  color: white;
+}
+.ColorDiv {
+  padding: 15px 17px;
+  font-size: 15px;
+  margin: 7px;
+  border: 2px solid #f26a82;
+  background-color: #f26a82;
+  color: white;
+  border-radius: 5px;
+}
+.DiscountDiv .griditem {
+  margin: 4px 0px;
+}
+/* Extra */
+.ExtraInfoDiv select {
+  width: 100%;
+  color: grey;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+}
+
+.griditem label {
+  color: grey;
+}
+.ExtraInfoDiv .griditem {
+  margin: 30px 20px;
+}
+.ExtraStep h2 {
+  padding-left: 20px;
+}
+.ExtraStep p {
+  font-size: 16px;
+  color: #303030;
+  /* font-weight: lighter; */
+  padding-left: 20px;
+  font-family: "Poppins", sans-serif;
+}
+textarea::placeholder {
+  color: rgba(92, 92, 92, 0.366);
+}
+/* Payment */
+.CardDetailsdiv {
+  display: flex;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.IconInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardLeft {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+}
+.cardRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 30%;
+}
+.CardDetailsdiv input {
+  padding: 5px;
+  font: 15px;
+  width: 100%;
+  border: none;
+  margin: 0px 5px;
+}
+
+.IconInput input:focus,
+.IconInput input:hover {
+  border: none;
+  outline: none;
+}
+.CardDetailsdiv p {
+  color: grey;
+}
+.Step img {
+  height: 2rem;
+  margin-top: 15px;
+}
+.Step .BookNow {
+  width: 100%;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  border: 2px solid #f26a82;
+  background-color: #f26a82;
+  color: white;
+}
+.Step .BookNow:hover {
+  background-color: white;
+  color: #f26a82;
+  border: 2px solid #f26a82;
+}
+.Step textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 10px;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+}
+
+/* .Step textarea::placeholder {
+} */
+.Step textarea:focus {
+  outline: none;
+}
+/* Payment */
+.greyp {
+  color: grey;
+  font-size: 15px;
+}
+.Step h2 {
+  font-weight: 600;
+}
+/*  */
+.span3 {
+  grid-column: span 3;
+}
+.span2 {
+  grid-column: span 2;
+}
+
+input:focus {
+  outline: none;
+}
+/* input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+
+/* Form */
+.outerSection .RightSection {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.outerSection .RightTopSection {
+  border: 2px solid rgba(128, 128, 128, 0.29);
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.352);
+}
+.outerSection .RightTopSection .features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0rem 2rem;
+}
+.features h4 {
+  margin-bottom: 5px;
+}
+.features p {
+  text-align: center;
+  margin: 0;
+  color: rgba(128, 128, 128, 0.78);
+}
+.outerSection .RightSection .RightFixedSection {
+  border: 2px solid rgba(128, 128, 128, 0.29);
+  height: fit-content;
+  width: 100%;
+  position: sticky;
+  margin-top: 20px;
+  top: 8em;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.352);
+}
+
+.cardheader {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.29);
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  padding: 15px 0px;
+  color: #0abab5;
+}
+.cardbody {
+  padding: 15px 0px;
+  font-size: 20px;
+}
+
+.logospan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0px;
+}
+.cardFooter {
+  border-top: 1px solid rgba(128, 128, 128, 0.29);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  padding: 15px 15px;
+}
+.griditem p {
+  margin: 0px;
+}
+.right {
+  text-align: right;
+}
+.griditem {
+  margin: 4px 10px;
+}
+.cardFooter h4 {
+  margin-top: 5px;
+}
+.cardFooter h1 {
+  margin-top: 5px;
+}
+.BookingDiv {
+  display: none;
+}
+.BookingDiv .RightFixedSection {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.29);
+}
+@media screen and (max-width: 1055px) {
+  .outerSection .RightTopSection {
+    display: none;
+  }
+  .outerSection .RightSection {
+    display: none;
+  }
+  .LeftSection {
+    width: 100%;
+    margin: 20px 40px;
+  }
+  .BookingDiv {
+    display: initial;
+  }
+}
+@media screen and (max-width: 723px) {
+  .ExtraDiv {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    gap: 10px 20px;
+  }
+  .DiscountDiv {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+  }
+  .IconInput {
+    flex-direction: column;
+  }
+  .cardLeft {
+    width: 100%;
+  }
+  .cardRight {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Step {
+    padding: 2em;
+  }
+  .Step img {
+    height: 1.5rem;
+    margin-top: 15px;
+  }
+  .DiscountDiv {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+  }
+  .PersonalDiv {
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+  }
+  .ExtraDiv {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+    gap: 10px 20px;
+  }
+  .span3 {
+    grid-column: span 1;
+  }
+  .span2 {
+    grid-column: span 1;
+  }
+  .HomeDiv {
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+  }
+  .HomeDiv input {
+    width: 94%;
+  }
+  .ServiceDiv {
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+  }
+  .ServiceDiv input {
+    width: 94%;
+  }
+  .IconInput {
+    flex-direction: column;
+  }
+  .cardLeft {
+    width: 100%;
+  }
+  .cardRight {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .TopTextsection {
+    padding: 0px 30px;
+  }
+  .Step {
+    padding: 2em;
+  }
+  .Step img {
+    height: 1.2rem;
+    margin-top: 15px;
+  }
+  .DiscountDiv {
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+  }
+  .PersonalDiv {
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+  }
+  .ExtraDiv {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+    gap: 10px 20px;
+  }
+  .cardText {
+    font-size: 10px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .TopTextsection {
+    padding: 0px 30px;
+  }
+  .Step {
+    padding: 2em;
+  }
+  .Step img {
+    display: none;
+  }
+  .ExtraDiv {
+    /* display: grid; */
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+    /* gap: 10px 20px; */
+  }
+}

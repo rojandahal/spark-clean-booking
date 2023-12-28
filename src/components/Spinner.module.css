@@ -1,0 +1,49 @@
+/* skin 2 */
+.numblock {
+  float: left;
+  width: 100%;
+  padding: 15px 30px;
+}
+.skin2 .numin {
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  height: 40px;
+  width: 110px;
+  float: left;
+}
+
+.skin2 .numin span {
+  width: 30%;
+  display: block;
+  height: 40px;
+  float: left;
+  position: relative;
+}
+
+.skin2 .numin span:before,
+.skin2 .numin span:after {
+  content: "";
+  position: absolute;
+  background-color: #667780;
+  height: 2px;
+  width: 10px;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -5px;
+}
+
+.skin2 .numin span.plus:after {
+  transform: rotate(90deg);
+}
+
+.skin2 .numin input {
+  float: left;
+  background-color: transparent;
+  /* width: 20%; */
+  width: 20px;
+  height: 20px;
+  border: none;
+  text-align: center;
+}
