@@ -1,6 +1,7 @@
 import React from "react";
 import pageHeaderBubble from "../images/shapes/page-header-bubble.png";
 import pageHeaderBg from "../images/backgrounds/page-header-bg.jpg";
+import "../assets/vendors/animate/custom-animate.css";
 
 const Header = () => {
   return (

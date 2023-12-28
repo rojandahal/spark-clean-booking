@@ -1021,7 +1021,7 @@ ul {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 999;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -2152,11 +2152,11 @@ body.boxed-wrapper .contact-one__call {
   left: 0;
   bottom: 0;
   -webkit-animation-name: zoominout;
-  animation-name: zoomInOut;
+  animation-name: zoominout;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  -webkit-animation-name: zoomInOut2;
+  -webkit-animation-name: zoominout;
   -webkit-animation-duration: 3s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
@@ -2164,18 +2164,18 @@ body.boxed-wrapper .contact-one__call {
   -moz-animation-duration: 3s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: ease-in-out;
-  -ms-animation-name: zoomInOut2;
+  -ms-animation-name: zoominout;
   -ms-animation-duration: 3s;
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: ease-in-out;
-  -o-animation-name: zoomInOut2;
+  -o-animation-name: zoominout;
   -o-animation-duration: 3s;
   -o-animation-iteration-count: infinite;
   -o-animation-timing-function: ease-in-out;
 }
 
 .page-header-bubble img {
-  width: auto;
+  width: 100%;
 }
 
 .page-header__inner {
@@ -2230,110 +2230,23 @@ body.boxed-wrapper .contact-one__call {
   max-width: 90%;
 }
 
+@keyframes zoominout {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.7);
+    transform: rotate(0deg) scale(0.7);
+    opacity: 0;
+  }
 
-/*** 
-=============================================
-    Zoom In Out Css
-=============================================
-***/
-.zoominout{
-	animation-name: zoomInOut; 
-	animation-duration: 3s; 
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
+  50% {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
 
--webkit-animation-name: zoomInOut; 
-	-webkit-animation-duration: 3s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: ease-in-out;
-
--moz-animation-name: zoomInOut; 
-	-moz-animation-duration: 3s; 
-	-moz-animation-iteration-count: infinite;
-	-moz-animation-timing-function: ease-in-out;
-
--ms-animation-name: zoomInOut; 
-	-ms-animation-duration: 3s; 
-	-ms-animation-iteration-count: infinite;
-	-ms-animation-timing-function: ease-in-out;
-
--o-animation-name: zoomInOut; 
-	-o-animation-duration: 3s; 
-	-o-animation-iteration-count: infinite;
-	-o-animation-timing-function: ease-in-out;
-}
-@-webkit-keyframes zoomInOut {
-0% {
-	-webkit-transform: rotate(0deg) scale(0.7);
-	transform: rotate(0deg) scale(0.7);
-opacity:0;
-}
-
-50% {
-	-webkit-transform: rotate(180deg) scale(1);
-	transform: rotate(180deg) scale(1);
-opacity:1;
-}
-
-100% {
-	-webkit-transform: rotate(360deg) scale(0.7);
-	transform: rotate(360deg) scale(0.7);
-opacity:0;
-}
-}
-
-
-
-
-/*** 
-=============================================
-	Zoom In Out 2 Css
-=============================================
-***/
-.zoominout-2{
-animation-name: zoomInOut; 
-animation-duration: 3s; 
-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-
--webkit-animation-name: zoomInOut2; 
--webkit-animation-duration: 3s;
--webkit-animation-iteration-count: infinite;
--webkit-animation-timing-function: ease-in-out;
-
--moz-animation-name: zoomInOut2; 
--moz-animation-duration: 3s; 
--moz-animation-iteration-count: infinite;
--moz-animation-timing-function: ease-in-out;
-
--ms-animation-name: zoomInOut2; 
--ms-animation-duration: 3s; 
--ms-animation-iteration-count: infinite;
--ms-animation-timing-function: ease-in-out;
-
--o-animation-name: zoomInOut2; 
--o-animation-duration: 3s; 
--o-animation-iteration-count: infinite;
--o-animation-timing-function: ease-in-out;
-}
-
-@-webkit-keyframes zoomInOut2 {
-0% {
--webkit-transform: rotate(0deg) scale(0.7);
-transform: rotate(0deg) scale(0.7);
-opacity:0;
-}
-
-50% {
--webkit-transform: rotate(0deg) scale(1);
-transform: rotate(0deg) scale(1);
-opacity:1;
-}
-
-100% {
--webkit-transform: rotate(0deg) scale(0.7);
-transform: rotate(0deg) scale(0.7);
-opacity:0;
-}
+  100% {
+    -webkit-transform: rotate(0deg) scale(0.7);
+    transform: rotate(0deg) scale(0.7);
+    opacity: 0;
+  }
 }
 

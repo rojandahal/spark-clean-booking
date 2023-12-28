@@ -4,7 +4,7 @@
 .google-map {
   position: relative;
   display: block;
-	margin-top: 50px;
+  margin-top: 50px;
   background-color: #eef0f6;
 }
 
@@ -249,7 +249,30 @@
 }
 
 .site-footer-shape-two img {
-  width: auto;
+  width: 100%;
+}
+
+/* Medium Screen */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.site-footer-shape-two {
+		bottom: 20px;
+	}
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.site-footer-shape-two {
+		bottom: 40px;
+	}
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+	.site-footer-shape-two {
+		bottom: 90px;
+		width: 100%;
+		overflow: hidden;
+	}
 }
 
 .site-footer__top {
@@ -270,7 +293,7 @@
 }
 
 .footer-widget__about-text {
-	text-align: start !important;
+  text-align: start !important;
   color: #b1c2f5;
   line-height: 32px;
 }
@@ -595,7 +618,7 @@
 
 .site-footer__bottom-text {
   font-size: 16px;
-	text-align: center !important;
+  text-align: center !important;
   color: #b1c2f5;
 }
 
