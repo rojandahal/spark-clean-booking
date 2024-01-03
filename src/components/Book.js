@@ -37,7 +37,7 @@ import CardImage from "../images/card.png";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const Book = ({ alert, setAlert }) => {
+const Book = ({ setAlert }) => {
   // let initialPrice = "119";
   // eslint-disable-next-line
   let initialPrice = "0";
@@ -1085,7 +1085,7 @@ const Book = ({ alert, setAlert }) => {
                           }
                           onChange={handleInputChange13}
                           min='0'
-													max='6'
+                          max='6'
                           name='HalfBathroom'
                           value={value13}
                         />
@@ -1677,7 +1677,7 @@ const Book = ({ alert, setAlert }) => {
                           }
                           onChange={handleInputChange7}
                           min='0'
-													max='6'
+                          max='6'
                           name='SpotCleanWalls'
                           value={value7}
                         />
