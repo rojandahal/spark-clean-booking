@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/NavbarFooter.css";
 
 import footerimg1 from "../assets/images/shapes/site-footer-shape-1.png";
@@ -8,6 +8,7 @@ import footerWidget2 from "../assets/images/resources/footer-widget-articles-img
 import informationLogo from "../assets/images/resources/information-logo.png";
 
 const Footer = () => {
+  const [date, setDate] = useState(new Date());
   return (
     <>
       <section className='google-map'>
@@ -228,7 +229,7 @@ const Footer = () => {
               <div className='col-xl-12'>
                 <div className='site-footer__bottom-inner'>
                   <p className='site-footer__bottom-text'>
-                    © Copyright 2023 by {" "}
+                    © Copyright {date.getFullYear()} by{" "}
                     <a href='#'>
                       Spark Clean Australia | Designed and Managed by Murphys
                       Technology Pty Ltd{" "}

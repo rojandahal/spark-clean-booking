@@ -2,13 +2,25 @@ import Book from "./components/Book";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
+import ScrollToTop from "./components/ScrollToTop";
+import { useState } from "react";
+import AlertCustom from "./components/AlertCustom";
 
 function App() {
+  const [alert, setAlert] = useState(false);
   return (
     <div>
+      <ScrollToTop />
       <Nav />
       <Header />
-      <Book />
+      <Book
+        alert={alert}
+        setAlert={setAlert}
+      />
+      <AlertCustom
+        alert={alert}
+        setAlert={setAlert}
+      />
       <Footer />
     </div>
   );

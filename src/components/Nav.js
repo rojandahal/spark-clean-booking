@@ -19,7 +19,6 @@ const Nav = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log(window.scrollY);
       isScrolled(window.scrollY > 220);
     });
 
@@ -186,14 +185,14 @@ const Nav = () => {
                       <li className=''>
                         <a href='compliance.html'>Compliance </a>
                       </li>
-                      <li className='current'>
-                        <a href='contact-page-2.html'>Book Now </a>
-                      </li>
                       <li className=''>
                         <a href='reviews.html'>Reviews </a>
                       </li>
                       <li className=''>
                         <a href='reviews.html'>FAQ </a>
+                      </li>
+                      <li className='current'>
+                        <a href='contact-page-2.html'>Book Now </a>
                       </li>
                     </ul>
                   </div>
@@ -373,14 +372,6 @@ const Nav = () => {
                     Compliance{" "}
                   </a>
                 </li>
-                <li class='current'>
-                  <a
-                    href='contact-page-2.html'
-                    bis_skin_checked='1'
-                  >
-                    Book Now{" "}
-                  </a>
-                </li>
                 <li class=''>
                   <a
                     href='reviews.html'
@@ -395,6 +386,14 @@ const Nav = () => {
                     bis_skin_checked='1'
                   >
                     FAQ{" "}
+                  </a>
+                </li>
+                <li class='current'>
+                  <a
+                    href='contact-page-2.html'
+                    bis_skin_checked='1'
+                  >
+                    Book Now{" "}
                   </a>
                 </li>
               </ul>
@@ -526,14 +525,14 @@ const Nav = () => {
                         <li className=''>
                           <a href='compliance.html'>Compliance </a>
                         </li>
-                        <li className='current'>
-                          <a href='contact-page-2.html'>Book Now </a>
-                        </li>
                         <li className=''>
                           <a href='reviews.html'>Reviews </a>
                         </li>
                         <li className=''>
                           <a href='reviews.html'>FAQ </a>
+                        </li>
+                        <li className='current'>
+                          <a href='contact-page-2.html'>Book Now </a>
                         </li>
                       </ul>
                     </div>

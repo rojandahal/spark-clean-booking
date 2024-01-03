@@ -64,26 +64,10 @@ mso-hide:all;
 <table class="es-content-body" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px; background-color: transparent; width: 600px;" cellspacing="0" cellpadding="0" align="center">
 <tbody>
 <tr style="border-collapse: collapse;">
-<td style="margin: 0; background-color: #f5f5f5; padding: 20px 10px 20px 10px;" align="left" bgcolor="#f5f5f5">
-<table style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px;" width="100%" cellspacing="0" cellpadding="0">
-<tbody>
-<tr style="border-collapse: collapse;">
-<td style="padding: 0; margin: 0; width: 580px;" align="center" valign="top">
-<table style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px;" role="presentation" width="100%" cellspacing="0" cellpadding="0">
-<tbody>
-<tr style="border-collapse: collapse;">
-<td style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; margin: 0px; font-size: 0px;" align="center"><a style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: none; color: #3ca7f1; font-size: 14px;" href="https://viewstripo.email/" target="_blank" rel="noopener"><img class="adapt-img" style="display: block; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" src="https://xrezpy.stripocdn.email/content/guids/CABINET_22188b1a6ddc969960f1763c21877e03e9a5c70a66b45387649ef7d94497596d/images/png_file_aue.png" alt="" height="115"></a></td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td style="margin: 0; background-color: #f5f5f5; padding: 20px 10px 20px 10px;" align="left" bgcolor="#f5f5f5">&nbsp;</td>
 </tr>
 <tr style="border-collapse: collapse;">
-<td style="margin: 0; background-color: #f26a82; padding: 20px;" align="left" bgcolor="#f26a82">
+<td style="margin: 0; background-color: #1239AC; padding: 20px;" align="left" bgcolor="#1239AC">
 <table style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px;" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr style="border-collapse: collapse;">
@@ -121,7 +105,7 @@ mso-hide:all;
 </tr>
 <tr style="border-collapse: collapse;">
 <td style="padding: 0; margin: 0;" align="center">&nbsp;
-<table class="es-table" style="border-collapse: collapse; border-spacing: 0px; width: 500px; height: 241.429px;" role="presentation" border="1" cellspacing="1" cellpadding="1">
+<table class="es-table" style="border-collapse: collapse; border-spacing: 0px; width: 500px; height: 295.715px;" role="presentation" border="1" cellspacing="1" cellpadding="1">
 <tbody>
 <tr style="border-collapse: collapse; height: 17.1429px;">
 <td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Name:</strong></td>
@@ -155,6 +139,10 @@ mso-hide:all;
 <td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Post Code:</strong></td>
 <td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{Post_Code}}</td>
 </tr>
+<tr style="height: 17.1429px;">
+<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Type of Cleaning:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{TypeOfCleaning}}</td>
+</tr>
 <tr style="border-collapse: collapse; height: 17.1429px;">
 <td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Service:</strong></td>
 <td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{ServiceType}}</td>
@@ -173,95 +161,175 @@ mso-hide:all;
 </tr>
 <tr style="border-collapse: collapse; height: 17.1429px;">
 <td style="padding: 0px; margin: 0px; color: rgb(0, 0, 0); font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Time:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;8AM - 7PM</td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;8AM - 5PM</td>
 </tr>
 <tr style="border-collapse: collapse; height: 18.5714px;">
 <td style="padding: 0px; margin: 0px; font-size: 15px; color: rgb(63, 63, 63); width: 198.058px; height: 18.5714px;"><strong>&nbsp; Card No.:</strong></td>
 <td style="padding: 0px; margin: 0px; width: 299.799px; height: 18.5714px;">&nbsp;{{CardNo}}</td>
 </tr>
-<tr>
-<td style="padding: 0px; margin: 0px; font-size: 15px; color: rgb(63, 63, 63); width: 198.058px;"><strong>&nbsp; MM/YY:</strong></td>
-<td style="padding: 0px; margin: 0px; width: 299.799px;">&nbsp;{{MM/YY}}</td>
+<tr style="height: 18.5714px;">
+<td style="padding: 0px; margin: 0px; font-size: 15px; color: rgb(63, 63, 63); width: 198.058px; height: 18.5714px;"><strong>&nbsp; MM/YY:</strong></td>
+<td style="padding: 0px; margin: 0px; width: 299.799px; height: 18.5714px;">&nbsp;{{MM/YY}}</td>
 </tr>
-<tr>
-<td style="padding: 0px; margin: 0px; font-size: 15px; color: rgb(63, 63, 63); width: 198.058px;"><strong>&nbsp; CVC:</strong></td>
-<td style="padding: 0px; margin: 0px; width: 299.799px;">&nbsp;{{CVC}}</td>
+<tr style="height: 18.5714px;">
+<td style="padding: 0px; margin: 0px; font-size: 15px; color: rgb(63, 63, 63); width: 198.058px; height: 18.5714px;"><strong>&nbsp; CVC:</strong></td>
+<td style="padding: 0px; margin: 0px; width: 299.799px; height: 18.5714px;">&nbsp;{{CVC}}</td>
 </tr>
 </tbody>
 </table>
-<p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #3f3f3f; font-size: 14px;">&nbsp;</p>
-<p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #3f3f3f; font-size: 14px;">EXTRAS:</p>
-<table class="es-table" style="border-collapse: collapse; border-spacing: 0px; width: 500px; height: 300.994px;" role="presentation" border="1" cellspacing="1" cellpadding="1">
+<p
+style="margin: 10; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #3f3f3f; font-size: 14px;">
+EXTRAS:</p>
+<table class="es-table"
+style="border-collapse: collapse; border-spacing: 0px; width: 500px; height: 317.422px;"
+role="presentation" border="1" cellspacing="1" cellpadding="1">
 <tbody>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;"><strong>&nbsp; Disinfectant:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{Disinfectant}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+<strong>&nbsp; FullBathroom:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{FullBathroom}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 20.9933px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 20.9933px;">
-<p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #333333; font-size: 14px;"><strong>&nbsp; Spring Clean:</strong></p>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 20.9933px; width: 243.326px;">
+<p
+style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #333333; font-size: 14px;">
+<strong>&nbsp; Half Bathroom:</strong></p>
 </td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 20.9933px;">&nbsp;{{SpringClean}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 20.9933px; width: 254.531px;">
+&nbsp;{{HalfBathroom}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;"><strong>&nbsp; Move IN/OUT(empty):</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{Move(empty)}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+<strong>&nbsp; CleanRefrigerator:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{CleanRefrigerator}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;"><strong>&nbsp; Move IN/OUT(furnished):</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{Move(furnished)}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+<strong>&nbsp; OvenCleaning:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{OvenCleaning}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;"><strong>&nbsp; Steam Clean:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{Steam_Clean}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+<strong>&nbsp; Small Balcony:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{SmallBalcony}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;"><strong>&nbsp; Clean Oven:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{Clean_Oven}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+<strong>&nbsp; Large Balcony:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{LargeBalcony}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 32.8571px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 32.8571px;"><strong>&nbsp; Clean inside kitchen cabinet (empty):</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 32.8571px;">&nbsp;{{Clean_inside_kitchen_cabinet_empty}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 32.8571px; width: 243.326px;">
+<strong>&nbsp; InteriorWindow:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 32.8571px; width: 254.531px;">
+&nbsp;{{InteriorWindow}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;"><strong>&nbsp; Clean inside kitchen cabinet (full):</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{Clean_inside_kitchen_cabinet_full}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+<strong>&nbsp; Carpet Steam Clean:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{CarpetSteamClean}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;"><strong>&nbsp; Clean Cabinets:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{CleanCabinets}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+<strong>&nbsp; Ceiling Floor:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{CeilingFloor}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;"><strong>&nbsp; Inside Window:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{Inside_Window}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+<strong>&nbsp; Deck Cleaning:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{Deck}}</td>
+</tr>
+<tr style="height: 16.4286px;">
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+<strong>&nbsp; Extra Dirty:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{ExtraDirty}}</td>
+</tr>
+<tr>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px;">
+<strong>&nbsp; Extra Storey:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px;">
+&nbsp;{{ExtraStorey}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;">&nbsp; <strong>Wipe Blinds:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{WipeBlinds}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+&nbsp; <strong>Exterior Window:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{ExteriorWindow}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;">&nbsp; <strong>Clean Walls:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{Clean_Walls}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+&nbsp; <strong>Inside Cupboard:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{InsideCupboard}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;">&nbsp; <strong>Balcony Clean:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{Balcony_Clean}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+&nbsp; <strong>Change Bedsheet:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{ChangeBedsheet}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;">&nbsp; <strong>Clean Inside Fridge:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{Clean_Inside_Fridge}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+&nbsp; <strong>Wet Wipe Blinds:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{WetWipeBlinds}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;">&nbsp; <strong>Clean Dirty Dishes:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{Clean_Dirty_Dishes}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+&nbsp; <strong>Spot Clean Walls:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{SpotCleanWalls}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 16.4286px;">&nbsp;<strong> Change Bed Linen:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 254.531px; height: 16.4286px;">&nbsp;{{Change_Bed_Linen}}</td>
-</tr>
-<tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; width: 243.326px; height: 17.1429px;">&nbsp; <strong>Same Day Booking:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 254.531px; height: 17.1429px;">&nbsp;{{Same_Day_Booking_Fee}}</td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">
+&nbsp;<strong> Patio Clean:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">
+&nbsp;{{Patio}}</td>
 </tr>
 </tbody>
 </table>
@@ -445,7 +513,7 @@ mso-hide:all;
 <table class="es-footer-body" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px; background-color: transparent; width: 600px;" cellspacing="0" cellpadding="0" align="center">
 <tbody>
 <tr style="border-collapse: collapse;">
-<td style="padding: 20px; margin: 0; background-color: #f26a82;" align="left" bgcolor="#f26a82">
+<td style="padding: 20px; margin: 0; background-color: #1239AC;" align="left" bgcolor="#1239AC">
 <table style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px;" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr style="border-collapse: collapse;">
@@ -454,14 +522,35 @@ mso-hide:all;
 <tbody>
 <tr style="border-collapse: collapse;">
 <td style="padding: 0; margin: 0; padding-top: 20px; padding-bottom: 20px;" align="center">
-<p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 16px; color: #f5f5f5; font-size: 13px;">Mommy Bear</p>
-<p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 16px; color: #f5f5f5; font-size: 13px;">13 Brittanica street officer</p>
-<p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 16px; color: #f5f5f5; font-size: 13px;"><a style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: underline; color: #f5f5f5; font-size: 13px; line-height: 16px;" href="tel:0403582550" target="_blank" rel="noopener">0403582550</a></p>
+
+<a
+style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: none; color: #3ca7f1; font-size: 14px;"
+href="https://sparkcleanaustralia.com.au/" target="_blank" rel="noopener"><img
+class="adapt-img"
+style="display: block; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;"
+src="https://sparkcleanaustralia.com.au/assets/images/resources/logo-1.png" alt="" height="50"></a>
+<p
+style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 16px; color: #f5f5f5; font-size: 13px;">
+Spark Clean Australia</p>
+<p
+style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 16px; color: #f5f5f5; font-size: 13px;">
+Lidcombe NSW 2141</p>
+<p
+style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 16px; color: #f5f5f5; font-size: 13px;">
+<a style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: underline; color: #f5f5f5; font-size: 13px; line-height: 16px;"
+href="tel:0493 922 822" target="_blank"
+rel="noopener">0493 922 822</a></p>
 </td>
 </tr>
 <tr style="border-collapse: collapse;">
-<td style="padding: 0; margin: 0; padding-top: 10px; padding-bottom: 10px;" align="center">
-<p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 20px; color: #f5f5f5; font-size: 13px;"><em><span style="font-size: 11px; line-height: 17px;">You are receiving this email because you have new bookings</span></em></p>
+<td
+style="padding: 0; margin: 0; padding-top: 10px; padding-bottom: 10px;"
+align="center">
+<p
+style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 20px; color: #f5f5f5; font-size: 13px;">
+<em><span style="font-size: 11px; line-height: 17px;">You are
+receiving this email because you have visited our site and
+booked our service.</span></em></p>
 </td>
 </tr>
 </tbody>

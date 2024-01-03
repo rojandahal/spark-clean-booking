@@ -1,3 +1,8 @@
+:root {
+  --rd-primary-color: #1239ac;
+  --rd-secondary-color: #1239ac;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -7,5 +12,48 @@
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
+  }
+}
+
+.top-to-btm {
+  position: relative;
+}
+.icon-position {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  text-align: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.icon-style {
+  display: inline-block;
+  background-color: var(--rd-primary-color);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 13px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.alert-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .alert-modal {
+    width: 100%;
   }
 }
