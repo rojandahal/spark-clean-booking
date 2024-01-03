@@ -1043,7 +1043,7 @@ const Book = ({ alert, setAlert }) => {
                           value={value12}
                         />
                         <p>
-                          Additional Full Bathrom - {" "}
+                          Additional Full Bathrom -{" "}
                           {typeOfCleaningSelected === "Standard Cleaning"
                             ? "$22 per"
                             : "$25 per"}{" "}
@@ -1085,6 +1085,7 @@ const Book = ({ alert, setAlert }) => {
                           }
                           onChange={handleInputChange13}
                           min='0'
+													max='6'
                           name='HalfBathroom'
                           value={value13}
                         />
@@ -1676,6 +1677,7 @@ const Book = ({ alert, setAlert }) => {
                           }
                           onChange={handleInputChange7}
                           min='0'
+													max='6'
                           name='SpotCleanWalls'
                           value={value7}
                         />

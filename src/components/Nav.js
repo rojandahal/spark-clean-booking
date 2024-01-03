@@ -191,6 +191,9 @@ const Nav = () => {
                       <li className=''>
                         <a href='reviews.html'>FAQ </a>
                       </li>
+                      <li class=''>
+                        <a href='contact-page-2.html'>Contact Us </a>
+                      </li>
                       <li className='current'>
                         <a href='contact-page-2.html'>Book Now </a>
                       </li>
@@ -388,6 +391,9 @@ const Nav = () => {
                     FAQ{" "}
                   </a>
                 </li>
+                <li class=''>
+                  <a href='contact-page-2.html'>Contact Us </a>
+                </li>
                 <li class='current'>
                   <a
                     href='contact-page-2.html'
@@ -530,6 +536,9 @@ const Nav = () => {
                         </li>
                         <li className=''>
                           <a href='reviews.html'>FAQ </a>
+                        </li>
+                        <li class=''>
+                          <a href='contact-page-2.html'>Contact Us </a>
                         </li>
                         <li className='current'>
                           <a href='contact-page-2.html'>Book Now </a>
