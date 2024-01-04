@@ -62,7 +62,7 @@ const Nav = () => {
             <div className='container'>
               <div className='main-header__top-details-inner'>
                 <div className='main-header__logo'>
-                  <a href='index.html'>
+                  <a href='https://sparkcleanaustralia.com.au/'>
                     <img
                       src={logo1}
                       alt='cleaners in sydney'
@@ -135,67 +135,83 @@ const Nav = () => {
                     </a>
                     <ul className='main-menu__list'>
                       <li className=''>
-                        <a href='index.html'>Home </a>
+                        <a href='https://sparkcleanaustralia.com.au/'>Home </a>
                       </li>
                       <li>
-                        <a href='about.html'>About Us</a>
+                        <a href='https://sparkcleanaustralia.com.au/about.html'>
+                          About Us
+                        </a>
                       </li>
                       <li className='dropdown'>
                         <a href='#'>Our Services </a>
                         <ul>
                           <li>
-                            <a href='industrialcleaning.html'>
+                            <a href='https://sparkcleanaustralia.com.au/industrialcleaning.html'>
                               Industrial cleaning
                             </a>
                           </li>
                           <li>
-                            <a href='hospitalitycleaning.html'>
+                            <a href='https://sparkcleanaustralia.com.au/hospitalitycleaning.html'>
                               Hospitality cleaning
                             </a>
                           </li>
                           <li>
-                            <a href='stratacleaning.html'>Strata cleaning</a>
+                            <a href='https://sparkcleanaustralia.com.au/stratacleaning.html'>
+                              Strata cleaning
+                            </a>
                           </li>
                           <li>
-                            <a href='airbnb.html'>Airbnb cleaning</a>
+                            <a href='https://sparkcleanaustralia.com.au/airbnb.html'>
+                              Airbnb cleaning
+                            </a>
                           </li>
                           <li>
-                            <a href='commercialcleaning.html'>
+                            <a href='https://sparkcleanaustralia.com.au/commercialcleaning.html'>
                               Commercial cleaning
                             </a>
                           </li>
                           <li>
-                            <a href='pressurecleaning.html'>
+                            <a href='https://sparkcleanaustralia.com.au/pressurecleaning.html'>
                               Pressure cleaning
                             </a>
                           </li>
                           <li>
-                            <a href='carpetcleaning.html'>Carpet cleaning</a>
+                            <a href='https://sparkcleanaustralia.com.au/carpetcleaning.html'>
+                              Carpet cleaning
+                            </a>
                           </li>
                           <li>
-                            <a href='residentalcleaning.html'>
+                            <a href='https://sparkcleanaustralia.com.au/residentalcleaning.html'>
                               Residential cleaning
                             </a>
                           </li>
                         </ul>
                       </li>
                       <li className=''>
-                        <a href='gallery.html'>Gallery </a>
+                        <a href='https://sparkcleanaustralia.com.au/gallery.html'>
+                          Gallery
+                        </a>
                       </li>
                       <li className=''>
-                        <a href='compliance.html'>Compliance </a>
+                        <a href='https://sparkcleanaustralia.com.au/compliance.html'>
+                          Compliance
+                        </a>
                       </li>
                       <li className=''>
-                        <a href='reviews.html'>Reviews </a>
+                        <a href='https://sparkcleanaustralia.com.au/reviews.html'>
+                          Reviews
+                        </a>
                       </li>
                       <li className=''>
                         <a href='reviews.html'>FAQ </a>
                       </li>
                       <li class=''>
-                        <a href='contact-page-2.html'>Contact Us </a>
+                        <a href='https://sparkcleanaustralia.com.au/contact-page-2.html'>
+                          Contact Us
+                        </a>
                       </li>
                       <li className='current'>
-                        <a href='contact-page-2.html'>Book Now </a>
+                        <a href='#'>Book Now </a>
                       </li>
                     </ul>
                   </div>
@@ -260,15 +276,15 @@ const Nav = () => {
               <ul class='main-menu__list'>
                 <li class=''>
                   <a
-                    href='index.html'
+                    href='https://sparkcleanaustralia.com.au/'
                     bis_skin_checked='1'
                   >
-                    Home{" "}
+                    Home
                   </a>
                 </li>
                 <li>
                   <a
-                    href='about.html'
+                    href='https://sparkcleanaustralia.com.au/about.html'
                     bis_skin_checked='1'
                   >
                     About Us
@@ -279,7 +295,7 @@ const Nav = () => {
                     href='#'
                     className={expanded ? "expanded" : null}
                   >
-                    Our Services{" "}
+                    Our Services
                     <button
                       aria-label='dropdown toggler'
                       className={expanded ? "expanded" : null}
@@ -295,7 +311,7 @@ const Nav = () => {
                   >
                     <li>
                       <a
-                        href='industrialcleaning.html'
+                        href='https://sparkcleanaustralia.com.au/industrialcleaning.html'
                         bis_skin_checked='1'
                       >
                         Industrial cleaning
@@ -303,7 +319,7 @@ const Nav = () => {
                     </li>
                     <li>
                       <a
-                        href='hospitalitycleaning.html'
+                        href='https://sparkcleanaustralia.com.au/hospitalitycleaning.html'
                         bis_skin_checked='1'
                       >
                         Hospitality cleaning
@@ -311,7 +327,7 @@ const Nav = () => {
                     </li>
                     <li>
                       <a
-                        href='stratacleaning.html'
+                        href='https://sparkcleanaustralia.com.au/stratacleaning.html'
                         bis_skin_checked='1'
                       >
                         Strata cleaning
@@ -319,7 +335,7 @@ const Nav = () => {
                     </li>
                     <li>
                       <a
-                        href='airbnb.html'
+                        href='https://sparkcleanaustralia.com.au/airbnb.html'
                         bis_skin_checked='1'
                       >
                         Airbnb cleaning
@@ -327,7 +343,7 @@ const Nav = () => {
                     </li>
                     <li>
                       <a
-                        href='commercialcleaning.html'
+                        href='https://sparkcleanaustralia.com.au/commercialcleaning.html'
                         bis_skin_checked='1'
                       >
                         Commercial cleaning
@@ -335,7 +351,7 @@ const Nav = () => {
                     </li>
                     <li>
                       <a
-                        href='pressurecleaning.html'
+                        href='https://sparkcleanaustralia.com.au/pressurecleaning.html'
                         bis_skin_checked='1'
                       >
                         Pressure cleaning
@@ -343,7 +359,7 @@ const Nav = () => {
                     </li>
                     <li>
                       <a
-                        href='carpetcleaning.html'
+                        href='https://sparkcleanaustralia.com.au/carpetcleaning.html'
                         bis_skin_checked='1'
                       >
                         Carpet cleaning
@@ -351,7 +367,7 @@ const Nav = () => {
                     </li>
                     <li>
                       <a
-                        href='residentalcleaning.html'
+                        href='https://sparkcleanaustralia.com.au/residentalcleaning.html'
                         bis_skin_checked='1'
                       >
                         Residential cleaning
@@ -361,18 +377,26 @@ const Nav = () => {
                 </li>
                 <li class=''>
                   <a
-                    href='gallery.html'
+                    href='https://sparkcleanaustralia.com.au/gallery.html'
                     bis_skin_checked='1'
                   >
-                    Gallery{" "}
+                    Gallery
                   </a>
                 </li>
                 <li class=''>
                   <a
-                    href='compliance.html'
+                    href='https://sparkcleanaustralia.com.au/compliance.html'
                     bis_skin_checked='1'
                   >
-                    Compliance{" "}
+                    Compliance
+                  </a>
+                </li>
+                <li class=''>
+                  <a
+                    href='https://sparkcleanaustralia.com.au/reviews.html'
+                    bis_skin_checked='1'
+                  >
+                    Reviews
                   </a>
                 </li>
                 <li class=''>
@@ -380,26 +404,20 @@ const Nav = () => {
                     href='reviews.html'
                     bis_skin_checked='1'
                   >
-                    Reviews{" "}
+                    FAQ
                   </a>
                 </li>
                 <li class=''>
-                  <a
-                    href='reviews.html'
-                    bis_skin_checked='1'
-                  >
-                    FAQ{" "}
+                  <a href='https://sparkcleanaustralia.com.au/contact-page-2.html'>
+                    Contact Us
                   </a>
-                </li>
-                <li class=''>
-                  <a href='contact-page-2.html'>Contact Us </a>
                 </li>
                 <li class='current'>
                   <a
-                    href='contact-page-2.html'
+                    href='#'
                     bis_skin_checked='1'
                   >
-                    Book Now{" "}
+                    Book Now
                   </a>
                 </li>
               </ul>
@@ -481,67 +499,83 @@ const Nav = () => {
                       </a>
                       <ul className='main-menu__list'>
                         <li>
-                          <a href='index.html'>Home </a>
+                          <a href='https://sparkcleanaustralia.com.au/'>Home</a>
                         </li>
                         <li>
-                          <a href='about.html'>About Us</a>
+                          <a href='https://sparkcleanaustralia.com.au/about.html'>
+                            About Us
+                          </a>
                         </li>
                         <li className='dropdown'>
                           <a href='#'>Our Services </a>
                           <ul>
                             <li>
-                              <a href='industrialcleaning.html'>
+                              <a href='https://sparkcleanaustralia.com.au/industrialcleaning.html'>
                                 Industrial cleaning
                               </a>
                             </li>
                             <li>
-                              <a href='hospitalitycleaning.html'>
+                              <a href='https://sparkcleanaustralia.com.au/hospitalitycleaning.html'>
                                 Hospitality cleaning
                               </a>
                             </li>
                             <li>
-                              <a href='stratacleaning.html'>Strata cleaning</a>
+                              <a href='https://sparkcleanaustralia.com.au/stratacleaning.html'>
+                                Strata cleaning
+                              </a>
                             </li>
                             <li>
-                              <a href='airbnb.html'>Airbnb cleaning</a>
+                              <a href='https://sparkcleanaustralia.com.au/airbnb.html'>
+                                Airbnb cleaning
+                              </a>
                             </li>
                             <li>
-                              <a href='commercialcleaning.html'>
+                              <a href='https://sparkcleanaustralia.com.au/commercialcleaning.html'>
                                 Commercial cleaning
                               </a>
                             </li>
                             <li>
-                              <a href='pressurecleaning.html'>
+                              <a href='https://sparkcleanaustralia.com.au/pressurecleaning.html'>
                                 Pressure cleaning
                               </a>
                             </li>
                             <li>
-                              <a href='carpetcleaning.html'>Carpet cleaning</a>
+                              <a href='https://sparkcleanaustralia.com.au/carpetcleaning.html'>
+                                Carpet cleaning
+                              </a>
                             </li>
                             <li>
-                              <a href='residentalcleaning.html'>
+                              <a href='https://sparkcleanaustralia.com.au/residentalcleaning.html'>
                                 Residential cleaning
                               </a>
                             </li>
                           </ul>
                         </li>
                         <li className=''>
-                          <a href='gallery.html'>Gallery </a>
+                          <a href='https://sparkcleanaustralia.com.au/gallery.html'>
+                            Gallery
+                          </a>
                         </li>
                         <li className=''>
-                          <a href='compliance.html'>Compliance </a>
+                          <a href='https://sparkcleanaustralia.com.au/compliance.html'>
+                            Compliance
+                          </a>
                         </li>
                         <li className=''>
-                          <a href='reviews.html'>Reviews </a>
+                          <a href='https://sparkcleanaustralia.com.au/reviews.html'>
+                            Reviews
+                          </a>
                         </li>
                         <li className=''>
                           <a href='reviews.html'>FAQ </a>
                         </li>
                         <li class=''>
-                          <a href='contact-page-2.html'>Contact Us </a>
+                          <a href='https://sparkcleanaustralia.com.au/contact-page-2.html'>
+                            Contact Us
+                          </a>
                         </li>
                         <li className='current'>
-                          <a href='contact-page-2.html'>Book Now </a>
+                          <a href='#'>Book Now </a>
                         </li>
                       </ul>
                     </div>

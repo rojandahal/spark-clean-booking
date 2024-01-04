@@ -15,7 +15,6 @@ import { BsFillCreditCard2FrontFill, BsFillHousesFill } from "react-icons/bs";
 import { SlCalender } from "react-icons/sl";
 import { GiRedCarpet, GiCycle, GiBrickWall } from "react-icons/gi";
 import { ImMoveDown } from "react-icons/im";
-import { FaThumbsUp, FaHandsHelping } from "react-icons/fa";
 import { LuMicrowave } from "react-icons/lu";
 import {
   MdOutlineWindow,
@@ -25,12 +24,15 @@ import {
   MdDeck,
   MdBathroom,
   MdOutlineBathroom,
+  MdOutlineTimer,
+  MdGppGood,
+  MdConnectWithoutContact,
 } from "react-icons/md";
-import { PiTreeEvergreenFill, PiClockCountdownFill } from "react-icons/pi";
+import { LiaHandsHelpingSolid } from "react-icons/lia";
+import { AiOutlineLike } from "react-icons/ai";
+import { PiTreeEvergreenFill } from "react-icons/pi";
 import { RiFridgeFill, RiVisaFill } from "react-icons/ri";
 import { BiSolidBed } from "react-icons/bi";
-import { AiFillSafetyCertificate } from "react-icons/ai";
-import { IoMdChatboxes } from "react-icons/io";
 import { GiFamilyHouse } from "react-icons/gi";
 
 import CardImage from "../images/card.png";
@@ -384,7 +386,6 @@ const Book = ({ setAlert }) => {
   const [ExtraPrice, setExtraPrice] = useState(0);
   useEffect(() => {
     let updatedExtraPrice = 0;
-    //Disinfectant
     if (
       (serviceSelected === "Flat Rate" && bedSelected) ||
       (serviceSelected === "Hourly Service" && hoursSelected)
@@ -680,22 +681,26 @@ const Book = ({ setAlert }) => {
       <div className={styles.outerSection}>
         <div className={styles.LeftSection}>
           <div className={styles.TopTextsection}>
-            <h1>Accepting Booking Requests</h1>
+            <h1>Secure Your Spot With Us</h1>
             <p>
-              We are currently open and have limited space for new customers!
-              Book now to avoid missing out.
+              Spark Clean is open and excited to welcome new customers with the
+              mission of providing a quality service! Secure your spot now
+              before it's gone.
             </p>
+            <br />
             <p>
-              Please note - Our services are available from 8am - 5pm. We will
-              contact you for specific time slot after booking.
+              Service Hours: 8am - 5pm <br /> (We'll confirm your specific time
+              slot after booking.)
             </p>
+            <br />
             <p>
-              All the fields marked * have to be filled for booking
-              confirmation.{" "}
+              *Book by filling out the fields marked with. <br /> (Required for
+              booking confirmation.)
             </p>
+            <br />
             <p>
-              If you encounter any problems in the form below, please call us on
-              0493 922 822.
+              If you have any problems filling out the form below, please call
+              us at 0493 922 822.
             </p>
             {/* <p>
               COVID-Safe Plan All members of our team will strictly follow
@@ -1211,11 +1216,12 @@ const Book = ({ setAlert }) => {
                         />
                         <p>Small Balcony - $32 ({value3})</p>
                         <span className={styles.tooltiptext}>
-                          Seamless Move In/Out cleaning, even with a full house!
-                          🧹 Our meticulous team handles every detail, leaving
-                          no mess unaddressed. Bid farewell to dust, grime, and
-                          stress! 😊 Enjoy a fresh and welcoming home, ready for
-                          a smooth transition! ✨
+                          We will thoroughly sweep, tidy, and mop your small
+                          balcony! Note that this does not include the outside
+                          glass of the balcony doors or the balustrades made of
+                          glass. Do you also need those cleaned? Add additional
+                          interior windows to the balcony or give our office a
+                          call to have a conversation 🧹
                         </span>
                       </div>
                     )}
@@ -1250,11 +1256,12 @@ const Book = ({ setAlert }) => {
                         />
                         <p>Large Balcony - $63 ({value4})</p>
                         <span className={styles.tooltiptext}>
-                          Seamless Move In/Out cleaning, even with a full house!
-                          🧹 Our meticulous team handles every detail, leaving
-                          no mess unaddressed. Bid farewell to dust, grime, and
-                          stress! 😊 Enjoy a fresh and welcoming home, ready for
-                          a smooth transition! ✨
+                          We will thoroughly sweep, tidy, and mop your large
+                          balcony! Note that this does not include the outside
+                          glass of the balcony doors or the balustrades made of
+                          glass. Do you also need those cleaned? Add additional
+                          interior windows to the balcony or give our office a
+                          call to have a conversation 🧹
                         </span>
                       </div>
                     )}
@@ -1605,11 +1612,11 @@ const Book = ({ setAlert }) => {
 
                         <p>Change Bedsheet ({value16})</p>
                         <span className={styles.tooltiptext}>
-                          Chill out while we freshen up your fridge! 🥶 Our team
-                          will carefully remove and clean the shelves, drawers,
-                          and compartments, leaving your fridge spotless and
-                          hygienic. Say goodbye to hidden spills and funky
-                          smells! 😇
+                          For about $10 per bed, transform your bed with
+                          brand-new sheets! 🛏️ As we replace your old sheets
+                          with new ones, you'll be able to sink into a world of
+                          relaxation and enjoy even more luxurious bedtimes. A
+                          simple change of linens might lead to sweet dreams!
                         </span>
                       </div>
                     )}
@@ -1644,10 +1651,13 @@ const Book = ({ setAlert }) => {
                         />
                         <p>Wet Wipe Blinds - $33/fixture ({value17})</p>
                         <span className={styles.tooltiptext}>
-                          Transform your bed with fresh linens for just $10/bed!
-                          🛏️ Slip into a world of comfort as we swap out your
-                          old sheets for new ones, making bedtime even more
-                          dreamy. Sweet dreams are just a linen change away!
+                          You no longer need to fear blind cleaning—we've got
+                          you covered! 🙌 We'll carefully and tenderly clean
+                          your blinds. We might not be able to clean extremely
+                          thin metallic venetian blinds without running the
+                          danger of breaking them. Rest assured, we'll have a
+                          conversation with you on the day to resolve any
+                          issues!
                         </span>
                       </div>
                     )}
@@ -1766,6 +1776,10 @@ const Book = ({ setAlert }) => {
                     minDate={minDate}
                     name='Date'
                     value={selectedDate}
+                    filterDate={date => {
+                      // Disable weekends ( Sunday )
+                      return date.getDay() !== 0;
+                    }}
                     required
                   />
                   <p
@@ -2198,48 +2212,51 @@ const Book = ({ setAlert }) => {
           <div className={styles.RightTopSection}>
             <IconContext.Provider value={{ color: "#1239ac", size: "18%" }}>
               <div className={styles.features}>
-                <PiClockCountdownFill />
-                <h4>SAVES YOU TIME</h4>
+                <MdOutlineTimer />
+                <h4>SAVING YOU VALUABLE TIME</h4>
                 <p>
-                  Spark Clean's booking system helps you live smarter, giving
-                  you time to focus on what's most important.
+                  Spark Clean's booking system is designed to streamline your
+                  life, freeing up precious time for what truly matters.
                 </p>
               </div>
               <div className={styles.features}>
-                <AiFillSafetyCertificate />
-                <h4>SAFETY FIRST</h4>
+                <MdGppGood />
+                <h4>PRIORITIZING SAFETY</h4>
                 <p>
-                  We rigorously vet all of our Cleaners, who undergo police
-                  checks as well as in-person interviews.
+                  Rest easy knowing that all our Cleaners undergo thorough
+                  vetting, including police checks and in-person interviews,
+                  ensuring your safety.
                 </p>
               </div>
               <div className={styles.features}>
-                <FaThumbsUp />
-                <h4>ONLY THE BEST QUALITY</h4>
+                <AiOutlineLike />
+                <h4>TOP-NOTCH QUALITY</h4>
                 <p>
-                  Our skilled professionals go above and beyond on every job.
-                  Cleaners are rated and reviewed after each task.
+                  Our skilled professionals consistently go above and beyond.
+                  After each task, Cleaners receive ratings and reviews,
+                  ensuring a commitment to excellence.
                 </p>
               </div>
               <div className={styles.features}>
-                <FaHandsHelping />
-                <h4>EASY TO GET HELP</h4>
+                <LiaHandsHelpingSolid />
+                <h4>HASSLE-FREE ASSISTANCE</h4>
                 <p>
-                  Select your post code, number of hours and beds, date and
-                  relax while we take care of your home.
+                  With just a few clicks—choose your postcode, specify hours and
+                  beds, select a date—sit back and relax as we take care of your
+                  home.
                 </p>
               </div>
               <div className={styles.features}>
-                <IoMdChatboxes />
-                <h4>SEAMLESS COMMUNICATION</h4>
+                <MdConnectWithoutContact />
+                <h4>SEAMLESS CONNECTIVITY</h4>
                 <p>
-                  Online communication makes it easy for you to stay in touch
-                  with your Cleaners.
+                  Stay in the loop effortlessly with your Cleaners through our
+                  user-friendly online communication platform.
                 </p>
               </div>
               <div className={styles.features}>
                 <RiVisaFill />
-                <h4>FLEXIBLE PAYMENT OPTIONS</h4>
+                <h4>PAYMENT FLEXIBILITY</h4>
                 <p>Pay securely online only when the cleaning is complete.</p>
               </div>
             </IconContext.Provider>

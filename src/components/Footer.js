@@ -63,7 +63,7 @@ const Footer = () => {
                 </div>
                 <div className='information__content'>
                   <p className='information__sub-title'>Visit office</p>
-                  <h5 className='information__number'>Lidcombe, NSW 2141</h5>
+                  <h5 className='information__number'>Lidcombe, NSW</h5>
                 </div>
               </li>
             </ul>

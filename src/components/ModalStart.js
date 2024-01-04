@@ -44,8 +44,10 @@ export default function ModalStart() {
             For Commercial Cleaning: $48 per hour <br />
             Contact us for Quotation
             <br />
+            <span className='m-2 icon-phone-call'></span>
             <a href='tel:0493922822'>0493 922 822</a>
             <br />
+            <span className='m-2 icon-message'></span>
             <a href='mailto:admin@sparkcleanaustralia.com.au'>
               admin@sparkcleanaustralia.com.au
             </a>
