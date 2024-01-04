@@ -5,19 +5,21 @@ import Nav from "./components/Nav";
 import ScrollToTop from "./components/ScrollToTop";
 import { useState } from "react";
 import AlertCustom from "./components/AlertCustom";
+import ModalStart from "./components/ModalStart";
 
 function App() {
   const [alert, setAlert] = useState(false);
   return (
     <div>
       <ScrollToTop />
-      <Nav />
-      <Header />
-      <Book
+      <AlertCustom
         alert={alert}
         setAlert={setAlert}
       />
-      <AlertCustom
+      <ModalStart />
+      <Nav />
+      <Header />
+      <Book
         alert={alert}
         setAlert={setAlert}
       />

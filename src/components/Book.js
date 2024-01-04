@@ -624,10 +624,10 @@ const Book = ({ setAlert }) => {
 
     emailjs
       .sendForm(
-        "service_yw86jks",
-        "template_1t1nk7w",
+        "service_e2c8kl6",
+        "template_3jbwkuk",
         form.current,
-        "bV-QdQuVmmX6e7Rv6"
+        "HE-LHRT4QxOU2-oYm"
       )
       .then(
         result => {
@@ -645,10 +645,10 @@ const Book = ({ setAlert }) => {
 
     emailjs
       .sendForm(
-        "service_yw86jks",
-        "template_s08w5ud",
+        "service_e2c8kl6",
+        "template_gerx6sm",
         form.current,
-        "bV-QdQuVmmX6e7Rv6"
+        "HE-LHRT4QxOU2-oYm"
       )
       .then(
         result => {
