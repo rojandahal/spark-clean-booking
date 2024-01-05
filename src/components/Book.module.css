@@ -26,9 +26,9 @@
 }
 
 .TopTextsection > h1 {
-	font-weight: 700;
-	margin: 0;
-	padding: 20px 0px;
+  font-weight: 700;
+  margin: 0;
+  padding: 20px 0px;
 }
 
 p {
@@ -130,7 +130,33 @@ p {
 
 .ExtraDiv .griditem .spinnerinput {
   width: 40%;
+  appearance: textarea !important;
+  -moz-appearance: textarea !important; /* Firefox */
+  margin: 0 !important;
+  font-size: 15px;
   /* width: 20%; */
+}
+
+.ExtraDiv .griditem .spinnerinput::-webkit-outer-spin-button,
+.ExtraDiv .griditem .spinnerinput::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.ExtraDiv .griditem .spinnerinput {
+  width: 40%;
+  margin: 0 !important;
+  font-size: 15px;
+}
+
+.ExtraDiv .griditem .spinnerinput::-webkit-inner-spin-button,
+.ExtraDiv .griditem .spinnerinput::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+.ExtraDiv .griditem .spinnerinput[type='number'] {
+  -moz-appearance: textfield !important; /* Firefox */
+  appearance: textfield !important; /* Other browsers */
 }
 .noneDisplay {
   display: none;
@@ -486,7 +512,7 @@ input[type="number"] {
   }
   .LeftSection {
     width: 100%;
-    margin: 20px 40px;
+    margin: 5px 5px;
   }
   .BookingDiv {
     display: initial;

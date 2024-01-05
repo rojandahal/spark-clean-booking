@@ -47,6 +47,7 @@ const Book = ({ setAlert }) => {
   // eslint-disable-next-line
   const [Price, setPrice] = useState("0");
   const [cardNumber, setCardNumber] = useState("");
+  const [MMYY, setMMYY] = useState("");
   const [selectedDate, setSelectedDate] = useState(null);
   const [Discount, setDiscount] = useState("One Time Cleaning");
   const [afterDiscount, setAfterDiscount] = useState("0");
@@ -58,6 +59,27 @@ const Book = ({ setAlert }) => {
   const handleChangeService = event => {
     const selectedService = event.target.value;
     setserviceSelected(selectedService);
+  };
+
+  //HANDLE CARD NUMBER
+  const handleChangeMY = event => {
+    let input = event.target.value;
+
+    // Remove any non-numeric characters
+    input = input.replace(/\D/g, "");
+
+    // Add a '/' between the month and year
+    if (input.length > 2) {
+      input = input.slice(0, 2) + "/" + input.slice(2);
+
+      // Restrict to MM/YY format (e.g., 12/23)
+      if (input.length > 5) {
+        input = input.slice(0, 5);
+      }
+    }
+
+    // Update state and set the formatted value
+    setMMYY(input);
   };
 
   // No.of Beds
@@ -1006,15 +1028,14 @@ const Book = ({ setAlert }) => {
               <div className={styles.Step}>
                 <h2>STEP 4-1: Select Extras</h2>
                 <strong>
-                  Please note for move-out/in cleans - inside oven and inside
-                  cabinets are included as standard. Other extras need to be
-                  booked.
+                  Our move-in/out cleaning services are priced differently from
+                  our standard cleaning, especially for bathrooms and additional
+                  stories.
                 </strong>
                 <p>
-                  For flat rates we strongly recommend the "Spring Clean" extra
-                  or when your house has not been fully cleaned for more then
-                  4-6f weeks to allow us extra time to remove built up
-                  dust/dirt/grime.
+                  <br />
+                  For flat rates, we highly recommend opting for the extra
+                  services mentioned below:
                 </p>
                 <div className={styles.ExtraDiv}>
                   <IconContext.Provider value={{ size: "70%" }}>
@@ -1139,11 +1160,11 @@ const Book = ({ setAlert }) => {
                       />
                       <p>Clean Refrigerator - $45 ({value1})</p>
                       <span className={styles.tooltiptext}>
-                        Our cleaning teams are all set to battle germs with
-                        anti-viral and disinfectant-grade products! 🦠💥 Just
-                        give us a heads-up if you have any sensitive surfaces,
-                        like marble, so we can take extra care to keep your home
-                        safe and squeaky clean!"
+                        Unwind and leave your refrigerator to us! Our cautious
+                        staff will thoroughly clean every shelf, drawer, and
+                        section of your refrigerator, leaving it flawless and
+                        hygienic. With confidence, say goodbye to mysterious
+                        spills and strange odors!
                       </span>
                     </div>
 
@@ -1178,10 +1199,11 @@ const Book = ({ setAlert }) => {
                         />
                         <p>Oven Cleaning - $45 ({value2})</p>
                         <span className={styles.tooltiptext}>
-                          For flat rates we strongly recommend the "Spring
-                          Clean" extra for when your house has not been fully
-                          cleaned for more then 4-6 weeks to allow us extra time
-                          to remove built up dust/dirt/grime
+                          Prepare for an element of magic in your oven-cleaning
+                          experience! Our skilled crew is determined to restore
+                          the shine to your oven. Note: There may be limitations
+                          to achieving a sparkling finish in older ovens, but no
+                          removal is required.
                         </span>
                       </div>
                     )}
@@ -1216,12 +1238,13 @@ const Book = ({ setAlert }) => {
                         />
                         <p>Small Balcony - $32 ({value3})</p>
                         <span className={styles.tooltiptext}>
-                          We will thoroughly sweep, tidy, and mop your small
-                          balcony! Note that this does not include the outside
-                          glass of the balcony doors or the balustrades made of
-                          glass. Do you also need those cleaned? Add additional
-                          interior windows to the balcony or give our office a
-                          call to have a conversation 🧹
+                          We're committed to sweeping, tidying, and mopping your
+                          small balcony thoroughly! Please note, that this
+                          service doesn't cover cleaning the outside glass of
+                          balcony doors or glass balcony. If you require
+                          cleaning for these areas, simply add additional
+                          interior windows to the balcony or reach out to our
+                          office for a detailed discussion
                         </span>
                       </div>
                     )}
@@ -1258,10 +1281,9 @@ const Book = ({ setAlert }) => {
                         <span className={styles.tooltiptext}>
                           We will thoroughly sweep, tidy, and mop your large
                           balcony! Note that this does not include the outside
-                          glass of the balcony doors or the balustrades made of
-                          glass. Do you also need those cleaned? Add additional
-                          interior windows to the balcony or give our office a
-                          call to have a conversation 🧹
+                          glass of the balcony doors or the balconies made of
+                          glass. For additional interior windows to the balcony
+                          give our office a call to have a conversation.
                         </span>
                       </div>
                     )}
@@ -1297,9 +1319,13 @@ const Book = ({ setAlert }) => {
                         />
                         <p>Interior Window ($20/room)({value5})</p>
                         <span className={styles.tooltiptext}>
-                          Price for 1-2 Bedroom : $99, 3-4 Bedroom : $129, 5-6
-                          Bedroom : $169 Please note we can not move heavy
-                          furniture (without assistance)
+                          Clean your space with our interior window service for
+                          just $20 per room! We remove dust, smudges, and grime
+                          from windows using top-tier cleaning solutions and
+                          techniques, revealing crystal-clear windows that
+                          invite natural light to cascade into your rooms. Our
+                          dedicated team leaves no streak or spot unnoticed from
+                          corner to corner.
                         </span>
                       </div>
                     )}
@@ -2046,12 +2072,11 @@ const Book = ({ setAlert }) => {
                         <input
                           type='text'
                           name='MM/YY'
-                          // value={MMYY}
-                          // onChange={handleChangeMY}
+                          value={MMYY}
+                          onChange={handleChangeMY}
                           placeholder='MM / YY'
                           pattern='(0[1-9]|1[0-2])\/[0-9]{2}'
                           title='Please enter a valid MM/YY format (e.g., 06/24)'
-                          maxLength='7'
                           required
                         />
                         <input
