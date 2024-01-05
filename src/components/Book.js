@@ -7,6 +7,13 @@ import React, {
 } from "react";
 import styles from "./Book.module.css";
 import emailjs from "@emailjs/browser";
+import {
+  NumberInput,
+  NumberInputField,
+  NumberInputStepper,
+  NumberIncrementStepper,
+  NumberDecrementStepper,
+} from "@chakra-ui/react";
 
 import { Spinner } from "@chakra-ui/react";
 // import Spinnerstyle from './Spinner.module.css'
@@ -289,44 +296,44 @@ const Book = ({ setAlert }) => {
   const [showInput2, setShowInput2] = useState(false);
 
   const handleInputChange1 = e => {
-    setValue1(parseInt(e.target.value));
-    if (e.target.value > 6) {
-      alert("Please enter a number between 0 and 6.");
-      setValue1(0);
-    }
+    setValue1(e);
+    // if (e > 6) {
+    //   alert("Please enter a number between 0 and 6.");
+    //   setValue1(0);
+    // }
   };
   const handleInputChange2 = e => {
-    setValue2(parseInt(e.target.value));
-    if (e.target.value > 6) {
-      alert("Please enter a number between 0 and 6.");
-      setValue2(0);
-    }
+    setValue2(e);
+    // if (e > 6) {
+    //   alert("Please enter a number between 0 and 6.");
+    //   setValue2(0);
+    // }
   };
   const handleInputChange3 = e => {
-    setValue3(e.target.value);
-    if (e.target.value > 6) {
-      alert("Please enter a number between 0 and 6.");
-      setValue3(0);
-    }
+    setValue3(e);
+    // if (e.target.value > 6) {
+    //   alert("Please enter a number between 0 and 6.");
+    //   setValue3(0);
+    // }
   };
   const handleInputChange4 = e => {
-    setValue4(e.target.value);
-    if (e.target.value > 6) {
-      alert("Please enter a number between 0 and 6.");
-      setValue4(0);
-    }
+    setValue4(e);
+    // if (e > 6) {
+    //   alert("Please enter a number between 0 and 6.");
+    //   setValue4(0);
+    // }
   };
   const handleInputChange5 = e => {
-    setValue5(e.target.value);
+    setValue5(e);
   };
   const handleInputChange6 = e => {
-    setValue6(e.target.value);
+    setValue6(e);
   };
   const handleInputChange7 = e => {
-    setValue7(e.target.value);
+    setValue7(e);
   };
   const handleInputChange8 = e => {
-    setValue8(e.target.value);
+    setValue8(e);
   };
   const handleInputChange9 = e => {
     if (e.target.value) {
@@ -350,25 +357,25 @@ const Book = ({ setAlert }) => {
     }
   };
   const handleInputChange12 = e => {
-    setValue12(e.target.value);
+    setValue12(e);
   };
   const handleInputChange13 = e => {
-    setValue13(e.target.value);
+    setValue13(e);
   };
   const handleInputChange14 = e => {
-    setValue14(e.target.value);
+    setValue14(e);
   };
   const handleInputChange15 = e => {
-    setValue15(e.target.value);
+    setValue15(e);
   };
   const handleInputChange16 = e => {
-    setValue16(e.target.value);
+    setValue16(e);
   };
   const handleInputChange17 = e => {
-    setValue17(e.target.value);
+    setValue17(e);
   };
   const handleInputChange18 = e => {
-    setValue18(e.target.value);
+    setValue18(e);
   };
 
   const handleIconsClick = iconIndex => {
@@ -1055,7 +1062,27 @@ const Book = ({ setAlert }) => {
                         >
                           <MdBathroom />
                         </div>
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput12
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='FullBathroom'
+                          onChange={handleInputChange12}
+                          value={value12}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput12
@@ -1067,7 +1094,7 @@ const Book = ({ setAlert }) => {
                           max='6'
                           name='FullBathroom'
                           value={value12}
-                        />
+                        /> */}
                         <p>
                           Additional Full Bathrom -{" "}
                           {typeOfCleaningSelected === "Standard Cleaning"
@@ -1076,12 +1103,11 @@ const Book = ({ setAlert }) => {
                           ({value12})
                         </p>
                         <span className={styles.tooltiptext}>
-                          No more dreaded blind-cleaning – we've got your back!
-                          🙌 We'll delicately wipe down your blinds with care.
-                          However, if they're super thin metallic venetian
-                          blinds, we may not be able to clean them without
-                          risking damage. Don't worry, we'll chat with you on
-                          the day if needed to figure it out! 😊
+                          Unwind and leave your refrigerator to us! Our cautious
+                          staff will thoroughly clean every shelf, drawer, and
+                          section of your refrigerator, leaving it flawless and
+                          hygienic. With confidence, say goodbye to mysterious
+                          spills and strange odors
                         </span>
                       </div>
                     ) : null}
@@ -1102,7 +1128,27 @@ const Book = ({ setAlert }) => {
                         >
                           <MdOutlineBathroom />
                         </div>
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput13
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='HalfBathroom'
+                          onChange={handleInputChange13}
+                          value={value13}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput13
@@ -1114,7 +1160,7 @@ const Book = ({ setAlert }) => {
                           max='6'
                           name='HalfBathroom'
                           value={value13}
-                        />
+                        /> */}
                         <p>Additional Half Bathroom - $15 ({value13})</p>
                         <span className={styles.tooltiptext}>
                           Cleaning walls isn't part of our flat rates or spring
@@ -1146,7 +1192,25 @@ const Book = ({ setAlert }) => {
                       >
                         <RiFridgeFill />
                       </div>
-                      <input
+                      <NumberInput
+                        defaultValue={0}
+                        min={0}
+                        max={6}
+                        size='lg'
+                        className={
+                          showInput1 ? styles.spinnerinput : styles.noneDisplay
+                        }
+                        name='CleanRefrigerator'
+                        onChange={handleInputChange1}
+                        value={value1}
+                      >
+                        <NumberInputField />
+                        <NumberInputStepper>
+                          <NumberIncrementStepper />
+                          <NumberDecrementStepper />
+                        </NumberInputStepper>
+                      </NumberInput>
+                      {/* <input
                         type='number'
                         className={
                           showInput1 ? styles.spinnerinput : styles.noneDisplay
@@ -1157,7 +1221,7 @@ const Book = ({ setAlert }) => {
                         name='CleanRefrigerator'
                         value={value1}
                         id='1'
-                      />
+                      /> */}
                       <p>Clean Refrigerator - $45 ({value1})</p>
                       <span className={styles.tooltiptext}>
                         Unwind and leave your refrigerator to us! Our cautious
@@ -1183,8 +1247,27 @@ const Book = ({ setAlert }) => {
                         >
                           <LuMicrowave />
                         </div>
-
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput2
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='OvenCleaning'
+                          onChange={handleInputChange2}
+                          value={value2}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput2
@@ -1196,7 +1279,7 @@ const Book = ({ setAlert }) => {
                           max='6'
                           name='OvenCleaning'
                           value={value2}
-                        />
+                        /> */}
                         <p>Oven Cleaning - $45 ({value2})</p>
                         <span className={styles.tooltiptext}>
                           Prepare for an element of magic in your oven-cleaning
@@ -1223,7 +1306,27 @@ const Book = ({ setAlert }) => {
                         >
                           <MdBalcony />
                         </div>
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput3
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='SmallBalcony'
+                          onChange={handleInputChange3}
+                          value={value3}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput3
@@ -1235,7 +1338,7 @@ const Book = ({ setAlert }) => {
                           max='6'
                           name='SmallBalcony'
                           value={value3}
-                        />
+                        /> */}
                         <p>Small Balcony - $32 ({value3})</p>
                         <span className={styles.tooltiptext}>
                           We're committed to sweeping, tidying, and mopping your
@@ -1264,7 +1367,27 @@ const Book = ({ setAlert }) => {
                         >
                           <MdBalcony />
                         </div>
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput4
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='LargeBalcony'
+                          onChange={handleInputChange4}
+                          value={value4}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput4
@@ -1276,7 +1399,7 @@ const Book = ({ setAlert }) => {
                           max='6'
                           name='LargeBalcony'
                           value={value4}
-                        />
+                        /> */}
                         <p>Large Balcony - $63 ({value4})</p>
                         <span className={styles.tooltiptext}>
                           We will thoroughly sweep, tidy, and mop your large
@@ -1303,8 +1426,27 @@ const Book = ({ setAlert }) => {
                         >
                           <MdOutlineWindow />
                         </div>
-
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput5
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='InteriorWindow'
+                          onChange={handleInputChange5}
+                          value={value5}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput5
@@ -1316,7 +1458,7 @@ const Book = ({ setAlert }) => {
                           max='6'
                           name='InteriorWindow'
                           value={value5}
-                        />
+                        /> */}
                         <p>Interior Window ($20/room)({value5})</p>
                         <span className={styles.tooltiptext}>
                           Clean your space with our interior window service for
@@ -1345,8 +1487,27 @@ const Book = ({ setAlert }) => {
                         >
                           <GiRedCarpet />
                         </div>
-
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput6
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='CarpetSteamClean'
+                          onChange={handleInputChange6}
+                          value={value6}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput6
@@ -1358,7 +1519,7 @@ const Book = ({ setAlert }) => {
                           max='6'
                           name='CarpetSteamClean'
                           value={value6}
-                        />
+                        /> */}
 
                         <p>Carpet Steam Clean - $90 ({value6})</p>
                         <span className={styles.tooltiptext}>
@@ -1386,8 +1547,27 @@ const Book = ({ setAlert }) => {
                         >
                           <ImMoveDown />
                         </div>
-
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput8
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='CeilingFloor'
+                          onChange={handleInputChange8}
+                          value={value8}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput8
@@ -1399,7 +1579,7 @@ const Book = ({ setAlert }) => {
                           max='10'
                           name='CeilingFloor'
                           value={value8}
-                        />
+                        /> */}
 
                         <p>
                           Ceiling to Floor Glass Window ($18/glass) ({value8})
@@ -1496,7 +1676,27 @@ const Book = ({ setAlert }) => {
                         >
                           <GiFamilyHouse />
                         </div>
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput18
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='ExtraStorey'
+                          onChange={handleInputChange18}
+                          value={value18}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput18
@@ -1508,7 +1708,7 @@ const Book = ({ setAlert }) => {
                           max='6'
                           name='ExtraStorey'
                           value={value18}
-                        />
+                        /> */}
                         <p>
                           Extra Storey
                           {typeOfCleaningSelected === "Standard Cleaning"
@@ -1541,7 +1741,27 @@ const Book = ({ setAlert }) => {
                         >
                           <MdOutlineSensorWindow />
                         </div>
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput14
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='ExteriorWindow'
+                          onChange={handleInputChange14}
+                          value={value14}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput14
@@ -1553,7 +1773,7 @@ const Book = ({ setAlert }) => {
                           max='10'
                           name='ExteriorWindow'
                           value={value14}
-                        />
+                        /> */}
                         <p>Exterior Window ($15/window) ({value14})</p>
                         <span className={styles.tooltiptext}>
                           We'll give your balcony a spiffy sweep, tidy, and mop!
@@ -1580,8 +1800,27 @@ const Book = ({ setAlert }) => {
                         >
                           <RiFridgeFill />
                         </div>
-
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput15
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='InsideCupboard'
+                          onChange={handleInputChange15}
+                          value={value15}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput15
@@ -1593,7 +1832,7 @@ const Book = ({ setAlert }) => {
                           max='6'
                           name='InsideCupboard'
                           value={value15}
-                        />
+                        /> */}
 
                         <p>Inside Cupboard - $55 (Must be Empty) ({value15})</p>
                         <span className={styles.tooltiptext}>
@@ -1621,8 +1860,27 @@ const Book = ({ setAlert }) => {
                         >
                           <BiSolidBed />
                         </div>
-
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput16
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='ChangeBedsheet'
+                          onChange={handleInputChange16}
+                          value={value16}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput16
@@ -1634,7 +1892,7 @@ const Book = ({ setAlert }) => {
                           max='10'
                           name='ChangeBedsheet'
                           value={value16}
-                        />
+                        /> */}
 
                         <p>Change Bedsheet ({value16})</p>
                         <span className={styles.tooltiptext}>
@@ -1662,7 +1920,27 @@ const Book = ({ setAlert }) => {
                         >
                           <MdBlinds />
                         </div>
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput17
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='WetWipeBlinds'
+                          onChange={handleInputChange17}
+                          value={value17}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput17
@@ -1674,7 +1952,7 @@ const Book = ({ setAlert }) => {
                           max='10'
                           name='WetWipeBlinds'
                           value={value17}
-                        />
+                        /> */}
                         <p>Wet Wipe Blinds - $33/fixture ({value17})</p>
                         <span className={styles.tooltiptext}>
                           You no longer need to fear blind cleaning—we've got
@@ -1703,8 +1981,27 @@ const Book = ({ setAlert }) => {
                         >
                           <GiBrickWall />
                         </div>
-
-                        <input
+                        <NumberInput
+                          defaultValue={0}
+                          min={0}
+                          max={6}
+                          size='lg'
+                          className={
+                            showInput7
+                              ? styles.spinnerinput
+                              : styles.noneDisplay
+                          }
+                          name='SpotCleanWalls'
+                          onChange={handleInputChange7}
+                          value={value7}
+                        >
+                          <NumberInputField />
+                          <NumberInputStepper>
+                            <NumberIncrementStepper />
+                            <NumberDecrementStepper />
+                          </NumberInputStepper>
+                        </NumberInput>
+                        {/* <input
                           type='number'
                           className={
                             showInput7
@@ -1716,7 +2013,7 @@ const Book = ({ setAlert }) => {
                           max='6'
                           name='SpotCleanWalls'
                           value={value7}
-                        />
+                        /> */}
 
                         <p>Spot Clean Walls ($35/room) ({value7})</p>
                         <span className={styles.tooltiptext}>
@@ -1917,6 +2214,7 @@ const Book = ({ setAlert }) => {
                   <select
                     id='Pets'
                     name='Pets'
+                    required
                   >
                     <option value=''></option>
 

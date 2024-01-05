@@ -158,6 +158,13 @@ p {
   -moz-appearance: textfield !important; /* Firefox */
   appearance: textfield !important; /* Other browsers */
 }
+
+@media screen and (max-width: 723px) {
+	.ExtraDiv .griditem .spinnerinput {
+		width: 50% !important;
+	}
+}
+
 .noneDisplay {
   display: none;
 }
