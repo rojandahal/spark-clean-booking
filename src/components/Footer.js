@@ -122,19 +122,19 @@ const Footer = () => {
                   <h3 className='footer-widget__title'>Quick Links</h3>
                   <ul className='footer-widget__links-list list-unstyled clearfix'>
                     <li>
-                      <a href='about.html'>About</a>
+                      <a href='https://sparkcleanaustralia.com.au/about.html'>About</a>
                     </li>
                     <li>
-                      <a href='gallery.html'>Gallery</a>
+                      <a href='https://sparkcleanaustralia.com.au/gallery.html'>Gallery</a>
                     </li>
                     <li>
-                      <a href='contact-page-2.html'>Contact</a>
+                      <a href='https://sparkcleanaustralia.com.au/contact-page-2.html'>Contact</a>
                     </li>
                     <li>
-                      <a href='compliance.html'>Compliance</a>
+                      <a href='https://sparkcleanaustralia.com.au/compliance.html'>Compliance</a>
                     </li>
                     <li>
-                      <a href='contact-page-2.html'>Book Now</a>
+                      <a href='#'>Book Now</a>
                     </li>
                   </ul>
                 </div>
@@ -152,7 +152,7 @@ const Footer = () => {
                           src={footerWidget}
                           alt='best cleaning service Epping'
                         />
-                        <a href='commercialcleaning.html'>
+                        <a href='https://sparkcleanaustralia.com.au/commercialcleaning.html'>
                           <span className='fa fa-link'></span>
                         </a>
                       </div>
@@ -161,7 +161,7 @@ const Footer = () => {
                           Online booking
                         </p>
                         <h5 className='footer-widget__articles-sub-title'>
-                          <a href='commercialcleaning.html'>
+                          <a href='https://sparkcleanaustralia.com.au/commercialcleaning.html'>
                             {" "}
                             Commercial Cleaning
                           </a>
@@ -174,7 +174,7 @@ const Footer = () => {
                           src={footerWidget2}
                           alt='best cleaning service Epping'
                         />
-                        <a href='residentalcleaning.html'>
+                        <a href='https://sparkcleanaustralia.com.au/residentalcleaning.html'>
                           <span className='fa fa-link'></span>
                         </a>
                       </div>
@@ -183,7 +183,7 @@ const Footer = () => {
                           Online booking
                         </p>
                         <h5 className='footer-widget__articles-sub-title'>
-                          <a href='residentalcleaning.html'>
+                          <a href='https://sparkcleanaustralia.com.au/residentalcleaning.html'>
                             {" "}
                             Residential Cleaning
                           </a>

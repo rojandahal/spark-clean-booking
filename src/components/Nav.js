@@ -143,7 +143,7 @@ const Nav = () => {
                         </a>
                       </li>
                       <li className='dropdown'>
-                        <a href='#'>Our Services </a>
+                        <a href='https://sparkcleanaustralia.com.au/service.html'>Our Services</a>
                         <ul>
                           <li>
                             <a href='https://sparkcleanaustralia.com.au/industrialcleaning.html'>
@@ -203,7 +203,7 @@ const Nav = () => {
                         </a>
                       </li>
                       <li className=''>
-                        <a href='reviews.html'>FAQ </a>
+                        <a href='https://sparkcleanaustralia.com.au/faq.html'>FAQ </a>
                       </li>
                       <li class=''>
                         <a href='https://sparkcleanaustralia.com.au/contact-page-2.html'>
@@ -292,7 +292,7 @@ const Nav = () => {
                 </li>
                 <li class='dropdown'>
                   <a
-                    href='#'
+                    href='https://sparkcleanaustralia.com.au/service.html'
                     className={expanded ? "expanded" : null}
                   >
                     Our Services
@@ -401,7 +401,7 @@ const Nav = () => {
                 </li>
                 <li class=''>
                   <a
-                    href='reviews.html'
+                    href='https://sparkcleanaustralia.com.au/faq.html'
                     bis_skin_checked='1'
                   >
                     FAQ
@@ -507,7 +507,7 @@ const Nav = () => {
                           </a>
                         </li>
                         <li className='dropdown'>
-                          <a href='#'>Our Services </a>
+                          <a href='https://sparkcleanaustralia.com.au/service.html'>Our Services </a>
                           <ul>
                             <li>
                               <a href='https://sparkcleanaustralia.com.au/industrialcleaning.html'>
@@ -567,7 +567,7 @@ const Nav = () => {
                           </a>
                         </li>
                         <li className=''>
-                          <a href='reviews.html'>FAQ </a>
+                          <a href='https://sparkcleanaustralia.com.au/faq.html'>FAQ </a>
                         </li>
                         <li class=''>
                           <a href='https://sparkcleanaustralia.com.au/contact-page-2.html'>

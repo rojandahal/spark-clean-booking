@@ -22,7 +22,7 @@ const Header = () => {
           <div class='page-header__inner'>
             <ul class='thm-breadcrumb list-unstyled'>
               <li>
-                <a href='index.html'>Home</a>
+                <a href='https://sparkcleanaustralia.com.au/'>Home</a>
               </li>
               <li>
                 <span>/</span>

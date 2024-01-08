@@ -55,6 +55,7 @@ const Book = ({ setAlert }) => {
   const [Price, setPrice] = useState("0");
   const [cardNumber, setCardNumber] = useState("");
   const [MMYY, setMMYY] = useState("");
+  const [cvc, setCVC] = useState("");
   const [selectedDate, setSelectedDate] = useState(null);
   const [Discount, setDiscount] = useState("One Time Cleaning");
   const [afterDiscount, setAfterDiscount] = useState("0");
@@ -87,6 +88,18 @@ const Book = ({ setAlert }) => {
 
     // Update state and set the formatted value
     setMMYY(input);
+  };
+
+  //HANDLE CVC LENGTH
+  const handleChangeCVC = event => {
+    // Ensure that the input only contains numeric characters
+    const numericValue = event.target.value.replace(/[^0-9]/g, "");
+
+    // Limit the length to 4 digits
+    const limitedLengthValue = numericValue.slice(0, 4);
+
+    // Update the state with the sanitized numeric value
+    setCVC(limitedLengthValue);
   };
 
   // No.of Beds
@@ -824,14 +837,14 @@ const Book = ({ setAlert }) => {
                     >
                       State*
                     </option>
-                    <option value='saab'>ACT</option>
-                    <option value='fiat'>NSW</option>
-                    <option value='audi'>NT</option>
-                    <option value='audi'>QLD</option>
-                    <option value='audi'>SA</option>
-                    <option value='audi'>TAS</option>
-                    <option value='audi'>VIC</option>
-                    <option value='audi'>WA</option>
+                    <option value='ACT'>ACT</option>
+                    <option value='NSW'>NSW</option>
+                    <option value='NT'>NT</option>
+                    <option value='QLD'>QLD</option>
+                    <option value='SA'>SA</option>
+                    <option value='TAS'>TAS</option>
+                    <option value='VIC'>VIC</option>
+                    <option value='WA'>WA</option>
                   </select>
                 </div>
                 <div className={styles.griditem}>
@@ -1103,11 +1116,11 @@ const Book = ({ setAlert }) => {
                           ({value12})
                         </p>
                         <span className={styles.tooltiptext}>
-                          Unwind and leave your refrigerator to us! Our cautious
-                          staff will thoroughly clean every shelf, drawer, and
-                          section of your refrigerator, leaving it flawless and
-                          hygienic. With confidence, say goodbye to mysterious
-                          spills and strange odors
+                          Step into the realm of relaxation and cleanliness with
+                          our additional full bathroom cleaning services! If you
+                          require additional bathroom cleaning, we have you
+                          covered. Our professional staff will clean your
+                          bathroom.
                         </span>
                       </div>
                     ) : null}
@@ -1163,11 +1176,10 @@ const Book = ({ setAlert }) => {
                         /> */}
                         <p>Additional Half Bathroom - $15 ({value13})</p>
                         <span className={styles.tooltiptext}>
-                          Cleaning walls isn't part of our flat rates or spring
-                          cleans. For move-out cleans, if your walls have more
-                          than just a couple of pesky scuff marks, make sure to
-                          choose this extra for each wall that needs some TLC.
-                          Let's get those walls looking fab again! 🌟
+                          Cleaning a half-bathroom is a delicate balance of
+                          precision and thoroughness. Begin with the sink and
+                          work down to the toilet and the floor. Leaving your
+                          bathroom clean and flawless professionally.
                         </span>
                       </div>
                     )}
@@ -1347,7 +1359,7 @@ const Book = ({ setAlert }) => {
                           balcony doors or glass balcony. If you require
                           cleaning for these areas, simply add additional
                           interior windows to the balcony or reach out to our
-                          office for a detailed discussion
+                          office for a detailed discussion.
                         </span>
                       </div>
                     )}
@@ -1523,11 +1535,11 @@ const Book = ({ setAlert }) => {
 
                         <p>Carpet Steam Clean - $90 ({value6})</p>
                         <span className={styles.tooltiptext}>
-                          Ready for some oven cleaning magic? 🧙‍♂️✨ Our team will
-                          wave their magic wands (a.k.a. spray bottles) and
-                          scrub away the grime, making your oven sparkle again!
-                          🌟 Note: No disassembly and older ovens might have
-                          sparkle limits.
+                          Shine your carpet at an affordable price with steam
+                          clean! We remove all the carpet dust, smudges, and
+                          unwanted stains leaving it immaculate. When it comes
+                          to providing quality services to our customers, our
+                          dedicated team makes no exceptions.
                         </span>
                       </div>
                     )}
@@ -1585,11 +1597,13 @@ const Book = ({ setAlert }) => {
                           Ceiling to Floor Glass Window ($18/glass) ({value8})
                         </p>
                         <span className={styles.tooltiptext}>
-                          Ready for some oven cleaning magic? 🧙‍♂️✨ Our team will
-                          wave their magic wands (a.k.a. spray bottles) and
-                          scrub away the grime, making your oven sparkle again!
-                          🌟 Note: No disassembly and older ovens might have
-                          sparkle limits.
+                          Find out how our ceiling-to-floor window cleaning
+                          services can change your life! Glamorous shine and
+                          open views that invite natural light to stream through
+                          your windows will elevate your space. Our methodical
+                          approach guarantees that every window sparkles,
+                          elevating your atmosphere and creating a memorable
+                          effect.
                         </span>
                       </div>
                     )}
@@ -1618,11 +1632,11 @@ const Book = ({ setAlert }) => {
                         />
                         <p>Deck Cleaning - $33</p>
                         <span className={styles.tooltiptext}>
-                          Experience the transformation of all your drawers and
-                          cabinets with our professional cleaning service! 🧽
-                          Say goodbye to hidden dirt and grime! 😌 Enjoy clean
-                          and organized storage spaces that are ready to
-                          accommodate your belongings effortlessly! ✨
+                          Deck cleaning services can transform your outdoor
+                          space into a haven of relaxation and entertainment.
+                          These services cater to your vision, whether it's for
+                          a cozy wooden deck or a stylish composite platform for
+                          hosting gatherings professionally.
                         </span>
                       </div>
                     )}
@@ -1651,11 +1665,13 @@ const Book = ({ setAlert }) => {
                         />
                         <p>Extra Dirty - $80</p>
                         <span className={styles.tooltiptext}>
-                          Bring the sunshine back into your home! 😎☀️ Just a
-                          heads-up: please remove fly-screens or any other
-                          obstacles before our visit, as we avoid handling them
-                          to prevent damage. With a clear path, we'll make your
-                          windows sparkle! ✨
+                          Grime Meets its Match with Extra Dirty Cleaning
+                          Services! We're not afraid to get our hands dirty in
+                          order to quickly transform your space from chaos to
+                          clean. We turn grimy into gleaming with our extreme
+                          attention to detail and knack for tackling even the
+                          most difficult messes, making your satisfaction our
+                          top priority.
                         </span>
                       </div>
                     )}
@@ -1717,11 +1733,12 @@ const Book = ({ setAlert }) => {
                           ({value18})
                         </p>
                         <span className={styles.tooltiptext}>
-                          Restore the sunshine to your house! Just so you know,
-                          before our visit, please take down any fly-screens or
-                          other barriers because we try to avoid handling them
-                          to prevent Our team will make your windows with a
-                          clear path. sparkle! ✨
+                          Extra Storey Cleaning Services adds a magical touch to
+                          your space. Our team elevates cleanliness to an art
+                          form with meticulous attention to detail and a
+                          commitment to sparkle. With our expert touch, you can
+                          say goodbye to dust bunnies and hello to clean
+                          surfaces.
                         </span>
                       </div>
                     ) : null}
@@ -1776,11 +1793,11 @@ const Book = ({ setAlert }) => {
                         /> */}
                         <p>Exterior Window ($15/window) ({value14})</p>
                         <span className={styles.tooltiptext}>
-                          We'll give your balcony a spiffy sweep, tidy, and mop!
-                          Please note this doesn't cover glass balustrades or
-                          exterior glass of the balcony doors. Need those
-                          cleaned too? Add inside windows on top of the balcony
-                          extra or give our office a call for a chat 🧹🙂
+                          Clean your space with our exterior window services at
+                          a reasonable price! We provide reliable outdoor window
+                          washing for homes, offices, stores, and other places
+                          providing services according to your needs and
+                          requirements.
                         </span>
                       </div>
                     )}
@@ -1836,11 +1853,11 @@ const Book = ({ setAlert }) => {
 
                         <p>Inside Cupboard - $55 (Must be Empty) ({value15})</p>
                         <span className={styles.tooltiptext}>
-                          Chill out while we freshen up your fridge! 🥶 Our team
-                          will carefully remove and clean the shelves, drawers,
-                          and compartments, leaving your fridge spotless and
-                          hygienic. Say goodbye to hidden spills and funky
-                          smells! 😇
+                          Our professional staff will leave your cupboard
+                          spotless for only $55. For security and privacy
+                          reasons, the inside of the cupboard must be secure.
+                          Aside from that, you don't have to stress about
+                          cleaning your cupboard.
                         </span>
                       </div>
                     )}
@@ -1894,13 +1911,13 @@ const Book = ({ setAlert }) => {
                           value={value16}
                         /> */}
 
-                        <p>Change Bedsheet ({value16})</p>
+                        <p>Change Bedsheet - $15 ({value16})</p>
                         <span className={styles.tooltiptext}>
-                          For about $10 per bed, transform your bed with
-                          brand-new sheets! 🛏️ As we replace your old sheets
-                          with new ones, you'll be able to sink into a world of
-                          relaxation and enjoy even more luxurious bedtimes. A
-                          simple change of linens might lead to sweet dreams!
+                          With our brand-new sheets, you can upgrade your bed
+                          for just $15 per bed! Witness the transformation as we
+                          replace your old sheets with new ones, allowing you to
+                          immerse yourself in a world of relaxation and elevate
+                          your bedtime to pure luxury!
                         </span>
                       </div>
                     )}
@@ -1955,13 +1972,13 @@ const Book = ({ setAlert }) => {
                         /> */}
                         <p>Wet Wipe Blinds - $33/fixture ({value17})</p>
                         <span className={styles.tooltiptext}>
-                          You no longer need to fear blind cleaning—we've got
-                          you covered! 🙌 We'll carefully and tenderly clean
-                          your blinds. We might not be able to clean extremely
-                          thin metallic venetian blinds without running the
-                          danger of breaking them. Rest assured, we'll have a
-                          conversation with you on the day to resolve any
-                          issues!
+                          Say goodbye to worries about blind cleaning—we've got
+                          it all under control! Our careful handling guarantees
+                          that the curtains are thoroughly cleaned. While
+                          extremely thin metallic Venetian blinds might pose a
+                          challenge, we'll handle them delicately to avoid any
+                          breakage. Rest assured, we'll discuss any concerns
+                          with you on the day to find the best solution!
                         </span>
                       </div>
                     )}
@@ -2017,11 +2034,14 @@ const Book = ({ setAlert }) => {
 
                         <p>Spot Clean Walls ($35/room) ({value7})</p>
                         <span className={styles.tooltiptext}>
-                          Ready for some oven cleaning magic? 🧙‍♂️✨ Our team will
-                          wave their magic wands (a.k.a. spray bottles) and
-                          scrub away the grime, making your oven sparkle again!
-                          🌟 Note: No disassembly and older ovens might have
-                          sparkle limits.
+                          Spot Clean Walls Services specializes in the
+                          restoration and maintenance of interior walls for a
+                          flawless environment. Our cautious team employs
+                          advanced techniques and tailored cleaning agents. We
+                          deliver outstanding outcomes while preserving wall
+                          integrity, from stubborn stains to general wear. Our
+                          service revitalizes walls, enhancing your home or
+                          workspace with new surfaces and a refreshed ambiance.
                         </span>
                       </div>
                     )}
@@ -2049,11 +2069,13 @@ const Book = ({ setAlert }) => {
                         />
                         <p>Patio - $33</p>
                         <span className={styles.tooltiptext}>
-                          Need a last-minute cleaning hero? 🦸‍♂️ No worries! For a
-                          $20 Same Day Booking Fee, we'll swoop in and save the
-                          day, getting your space spick and span in no time! To
-                          make a booking on the same day, you will actually need
-                          to call our friendly office team on 0403582550 📞
+                          Revitalize your outdoor space with our top-notch patio
+                          cleaning services! Say goodbye to the stubborn stains
+                          and grime that have been hiding your patio's beauty.
+                          Our expert team uses the most up-to-date techniques to
+                          ensure a sparkling clean, welcoming you to enjoy your
+                          outdoor haven with ease. Witness the transformation
+                          and watch your patio shine brightly once more!
                         </span>
                       </div>
                     )}
@@ -2075,14 +2097,16 @@ const Book = ({ setAlert }) => {
                 Note: Full address must be entered above for booking spots to
                 populate.
               </p>
+              <br />
               <p>
-                The cleaners will arrive between the time's allocated. If you
-                are able to provide remote access (e.g. a key) please select the
-                larger window of time to help us plan.
+                The cleaners will arrive within the allocated time slots. If
+                possible, please grant us access to your property when no one is
+                inside. If you have spare keys, ask a member of staff to give
+                them to us.
               </p>{" "}
               <p>
-                If you require an exact arrival time, please make a note in the
-                comments below.
+                If you need an exact arrival time, kindly specify in the
+                comments section below.
               </p>
               {/* <p>
                 We may be in touch to request a different date/time before
@@ -2205,7 +2229,7 @@ const Book = ({ setAlert }) => {
               <h2>Important Extra Information</h2>
               <p>
                 Some of our cleaning teams have allergies or other reasons why
-                they can't attend homes withs pets.
+                they can't attend homes with pets.
               </p>
               <div className={styles.ExtraInfoDiv}>
                 <div className={styles.griditem}>
@@ -2380,6 +2404,15 @@ const Book = ({ setAlert }) => {
                         <input
                           type='text'
                           name='CVC'
+                          placeholder='CVC'
+                          value={cvc}
+                          onChange={handleChangeCVC}
+                          maxLength='4'
+                          required
+                        />
+                        {/* <input
+                          type='text'
+                          name='CVC'
                           // value={MMYY}
                           // onChange={handleChangeMY}
                           placeholder='CVC'
@@ -2387,7 +2420,7 @@ const Book = ({ setAlert }) => {
                           title='Please enter a valid 3-digit numeric CVC'
                           maxLength='3'
                           required
-                        />
+                        /> */}
                       </div>
                     </div>
                     {/* <div className={styles.cardText}>
@@ -2401,9 +2434,9 @@ const Book = ({ setAlert }) => {
                 </IconContext.Provider>
               </div>
               <p className={styles.greyp}>
-                I authorize Spark Clean to charge my credit card above for
-                agreed upon purchases. I understand that my information will be
-                saved to file for further transactions on my account.
+                I authorize Spark Clean Australia to charge my credit card above
+                for agreed upon purchases. I understand that my information will
+                be saved to file for further transactions on my account.
               </p>
             </div>
             <div className={`${styles.Step} ${styles.BookingDiv}`}>
