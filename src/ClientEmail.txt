@@ -11,48 +11,236 @@ a {text-decoration: none;}
 </xml>
 <![endif]-->
 <style type="text/css">
-#outlook a {
-padding:0;
-}
+outlook a {
+padding: 0;
+
 .ExternalClass {
-width:100%;
-}
+width: 100%;
+
 .ExternalClass,
-.ExternalClass p,
-.ExternalClass span,
-.ExternalClass font,
-.ExternalClass td,
-.ExternalClass div {
-line-height:100%;
-}
+ExternalClass p,
+ExternalClass span,
+ExternalClass font,
+ExternalClass td,
+ExternalClass div {
+line-height: 100%;
+
 .es-button {
-mso-style-priority:100!important;
-text-decoration:none!important;
-}
+mso-style-priority: 100 !important;
+text-decoration: none !important;
+
 a[x-apple-data-detectors] {
-color:inherit!important;
-text-decoration:none!important;
-font-size:inherit!important;
-font-family:inherit!important;
-font-weight:inherit!important;
-line-height:inherit!important;
+color: inherit !important;
+text-decoration: none !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+
+.es-desk-hidden {
+display: none;
+float: left;
+overflow: hidden;
+width: 0;
+max-height: 0;
+line-height: 0;
+mso-hide: all;
+
+@media only screen and (max-width:600px) {
+p,
+ul li,
+ol li,
+a {
+line-height: 150% !important
+}
+h1,
+h2,
+h3,
+h1 a,
+h2 a,
+h3 a {
+line-height: 120% !important
+}
+h1 {
+font-size: 30px !important;
+text-align: center
+}
+h2 {
+font-size: 26px !important;
+text-align: center
+}
+h3 {
+font-size: 20px !important;
+text-align: center
+}
+.es-header-body h1 a,
+.es-content-body h1 a,
+.es-footer-body h1 a {
+font-size: 30px !important
+}
+.es-header-body h2 a,
+.es-content-body h2 a,
+.es-footer-body h2 a {
+font-size: 26px !important
+}
+.es-header-body h3 a,
+.es-content-body h3 a,
+.es-footer-body h3 a {
+font-size: 20px !important
+}
+.es-header-body p,
+.es-header-body ul li,
+.es-header-body ol li,
+.es-header-body a {
+font-size: 16px !important
+}
+.es-content-body p,
+.es-content-body ul li,
+.es-content-body ol li,
+.es-content-body a {
+font-size: 16px !important
+}
+.es-footer-body p,
+.es-footer-body ul li,
+.es-footer-body ol li,
+.es-footer-body a {
+font-size: 16px !important
+}
+.es-infoblock p,
+.es-infoblock ul li,
+.es-infoblock ol li,
+.es-infoblock a {
+font-size: 12px !important
+}
+*[class="gmail-fix"] {
+display: none !important
+}
+.es-m-txt-c,
+.es-m-txt-c h1,
+.es-m-txt-c h2,
+.es-m-txt-c h3 {
+text-align: center !important
+}
+.es-m-txt-r,
+.es-m-txt-r h1,
+.es-m-txt-r h2,
+.es-m-txt-r h3 {
+text-align: right !important
+}
+.es-m-txt-l,
+.es-m-txt-l h1,
+.es-m-txt-l h2,
+.es-m-txt-l h3 {
+text-align: left !important
+}
+.es-m-txt-r img,
+.es-m-txt-c img,
+.es-m-txt-l img {
+display: inline !important
+}
+.es-button-border {
+display: block !important
+}
+a.es-button,
+button.es-button {
+font-size: 20px !important;
+display: block !important;
+padding: 10px 20px 10px 20px !important
+}
+.es-btn-fw {
+border-width: 10px 0px !important;
+text-align: center !important
+}
+.es-adaptive table,
+.es-btn-fw,
+.es-btn-fw-brdr,
+.es-left,
+.es-right {
+width: 100% !important
+}
+.es-content table,
+.es-header table,
+.es-footer table,
+.es-content,
+.es-footer,
+.es-header {
+width: 100% !important;
+max-width: 600px !important
+}
+.es-adapt-td {
+display: block !important;
+width: 100% !important
+}
+.adapt-img {
+width: 100% !important;
+height: auto !important
+}
+.es-m-p0 {
+padding: 0px !important
+}
+.es-m-p0r {
+padding-right: 0px !important
+}
+.es-m-p0l {
+padding-left: 0px !important
+}
+.es-m-p0t {
+padding-top: 0px !important
+}
+.es-m-p0b {
+padding-bottom: 0 !important
+}
+.es-m-p20b {
+padding-bottom: 20px !important
+}
+.es-mobile-hidden,
+.es-hidden {
+display: none !important
+}
+tr.es-desk-hidden,
+td.es-desk-hidden,
+table.es-desk-hidden {
+width: auto !important;
+overflow: visible !important;
+float: none !important;
+max-height: inherit !important;
+line-height: inherit !important
+}
+tr.es-desk-hidden {
+display: table-row !important
+}
+table.es-desk-hidden {
+display: table !important
+}
+td.es-desk-menu-hidden {
+display: table-cell !important
+}
+.es-menu td {
+width: 1% !important
+}
+table.es-table-not-adapt,
+.esd-block-html table {
+width: auto !important
+}
+table.es-social {
+display: inline-block !important
+}
+table.es-social td {
+display: inline-block !important
 }
 .es-desk-hidden {
-display:none;
-float:left;
-overflow:hidden;
-width:0;
-max-height:0;
-line-height:0;
-mso-hide:all;
+display: table-row !important;
+width: auto !important;
+overflow: visible !important;
+max-height: inherit !important
 }
-@media only screen and (max-width:600px) {p, ul li, ol li, a { line-height:150%!important } h1, h2, h3, h1 a, h2 a, h3 a { line-height:120%!important } h1 { font-size:30px!important; text-align:center } h2 { font-size:26px!important; text-align:center } h3 { font-size:20px!important; text-align:center } .es-header-body h1 a, .es-content-body h1 a, .es-footer-body h1 a { font-size:30px!important } .es-header-body h2 a, .es-content-body h2 a, .es-footer-body h2 a { font-size:26px!important } .es-header-body h3 a, .es-content-body h3 a, .es-footer-body h3 a { font-size:20px!important } .es-header-body p, .es-header-body ul li, .es-header-body ol li, .es-header-body a { font-size:16px!important } .es-content-body p, .es-content-body ul li, .es-content-body ol li, .es-content-body a { font-size:16px!important } .es-footer-body p, .es-footer-body ul li, .es-footer-body ol li, .es-footer-body a { font-size:16px!important } .es-infoblock p, .es-infoblock ul li, .es-infoblock ol li, .es-infoblock a { font-size:12px!important } *[class="gmail-fix"] { display:none!important } .es-m-txt-c, .es-m-txt-c h1, .es-m-txt-c h2, .es-m-txt-c h3 { text-align:center!important } .es-m-txt-r, .es-m-txt-r h1, .es-m-txt-r h2, .es-m-txt-r h3 { text-align:right!important } .es-m-txt-l, .es-m-txt-l h1, .es-m-txt-l h2, .es-m-txt-l h3 { text-align:left!important } .es-m-txt-r img, .es-m-txt-c img, .es-m-txt-l img { display:inline!important } .es-button-border { display:block!important } a.es-button, button.es-button { font-size:20px!important; display:block!important; padding:10px 20px 10px 20px!important } .es-btn-fw { border-width:10px 0px!important; text-align:center!important } .es-adaptive table, .es-btn-fw, .es-btn-fw-brdr, .es-left, .es-right { width:100%!important } .es-content table, .es-header table, .es-footer table, .es-content, .es-footer, .es-header { width:100%!important; max-width:600px!important } .es-adapt-td { display:block!important; width:100%!important } .adapt-img { width:100%!important; height:auto!important } .es-m-p0 { padding:0px!important } .es-m-p0r { padding-right:0px!important } .es-m-p0l { padding-left:0px!important } .es-m-p0t { padding-top:0px!important } .es-m-p0b { padding-bottom:0!important } .es-m-p20b { padding-bottom:20px!important } .es-mobile-hidden, .es-hidden { display:none!important } tr.es-desk-hidden, td.es-desk-hidden, table.es-desk-hidden { width:auto!important; overflow:visible!important; float:none!important; max-height:inherit!important; line-height:inherit!important } tr.es-desk-hidden { display:table-row!important } table.es-desk-hidden { display:table!important } td.es-desk-menu-hidden { display:table-cell!important } .es-menu td { width:1%!important } table.es-table-not-adapt, .esd-block-html table { width:auto!important } table.es-social { display:inline-block!important } table.es-social td { display:inline-block!important } .es-desk-hidden { display:table-row!important; width:auto!important; overflow:visible!important; max-height:inherit!important } }
+	}
 </style>
 <div class="es-wrapper-color" style="background-color: #ffffff;"><!-- [if gte mso 9]>
-<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
-<v:fill type="tile" color="#ffffff"></v:fill>
-</v:background>
-<![endif]-->
+	<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+	<v:fill type="tile" color="#ffffff"></v:fill>
+	</v:background>
+	<![endif]-->
 <table class="es-wrapper" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px; padding: 0; margin: 0; width: 100%; height: 100%; background-repeat: repeat; background-position: center top; background-color: #ffffff;" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr style="border-collapse: collapse;">
@@ -64,10 +252,26 @@ mso-hide:all;
 <table class="es-content-body" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px; background-color: transparent; width: 600px;" cellspacing="0" cellpadding="0" align="center">
 <tbody>
 <tr style="border-collapse: collapse;">
-<td style="margin: 0; background-color: #f5f5f5; padding: 20px 10px 20px 10px;" align="left" bgcolor="#f5f5f5">&nbsp;</td>
+<td style="margin: 0; background-color: #f8f8f8; padding: 20px 10px 20px 10px;" align="left" bgcolor="#F8F8F8">
+<table style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px;" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="border-collapse: collapse;">
+<td style="padding: 0; margin: 0; width: 580px;" align="center" valign="top">
+<table style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px;" role="presentation" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="border-collapse: collapse;">
+<td style="padding: 0; margin: 0; font-size: 0px;" align="center"><a style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; text-decoration: none; color: #3ca7f1; font-size: 14px;" href="https://sparkcleanaustralia.com.au/" target="_blank" rel="noopener"><img class="adapt-img" style="display: block; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" src="https://sparkcleanaustralia.com.au/assets/images/resources/logo-1.png" alt="" height="100"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
 </tr>
 <tr style="border-collapse: collapse;">
-<td style="margin: 0; background-color: #1239ac; padding: 20px;" align="left" bgcolor="#1239AC">
+<td style="margin: 0; background-color: #1239ac; padding: 20px;" align="left" bgcolor="#1239ac">
 <table style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px;" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr style="border-collapse: collapse;">
@@ -77,8 +281,13 @@ mso-hide:all;
 <tr style="border-collapse: collapse;">
 <td style="padding: 0; margin: 0; padding-top: 15px; padding-bottom: 15px;" align="center">
 <div>
-<h2 style="margin: 0; line-height: 38px; mso-line-height-rule: exactly; font-family: Arial, sans-serif; font-size: 32px; font-style: normal; font-weight: normal; color: #f5f5f5;"><strong>! New Booking !</strong></h2>
+<h2 style="margin: 0; line-height: 38px; mso-line-height-rule: exactly; font-family: Arial, sans-serif; font-size: 32px; font-style: normal; font-weight: normal; color: #f5f5f5;"><strong>THANK YOU!!</strong></h2>
 </div>
+</td>
+</tr>
+<tr style="border-collapse: collapse;">
+<td style="padding: 0; margin: 0;" align="center">
+<p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 26px; color: #ffffff; font-size: 17px;">For Booking Our Service</p>
 </td>
 </tr>
 </tbody>
@@ -99,85 +308,74 @@ mso-hide:all;
 <tbody>
 <tr style="border-collapse: collapse;">
 <td style="padding: 0; margin: 0;" align="center">
-<h2 style="margin: 0; line-height: 23px; mso-line-height-rule: exactly; font-family: Arial, sans-serif; font-size: 19px; font-style: normal; font-weight: normal; color: #191919;">HERE IS NEW&nbsp;BOOKING DETAILS</h2>
+<h2 style="margin: 0; line-height: 23px; mso-line-height-rule: exactly; font-family: Arial, sans-serif; font-size: 19px; font-style: normal; font-weight: normal; color: #191919;">HERE IS YOUR&nbsp;BOOKING DETAILS</h2>
 <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #333333; font-size: 14px;">&nbsp;</p>
 </td>
 </tr>
 <tr style="border-collapse: collapse;">
 <td style="padding: 0; margin: 0;" align="center">&nbsp;
-<table class="es-table" style="border-collapse: collapse; border-spacing: 0px; width: 500px; height: 295.715px;" role="presentation" border="1" cellspacing="1" cellpadding="1">
+<table class="es-table" style="border-collapse: collapse; border-spacing: 0px; width: 500px; height: 257.143px;" role="presentation" border="1" cellspacing="1" cellpadding="1">
 <tbody>
 <tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Name:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{Fname}} {{Lname}}</td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;"><strong>&nbsp; Name:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;">&nbsp;{{Fname}} {{Lname}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Phone:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{Phone}}</td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;"><strong>&nbsp; Phone:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;">&nbsp;{{Phone}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Address:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{Address}}</td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;"><strong>&nbsp; Address:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;">&nbsp;{{Address}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Email:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{Email}}</td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;"><strong>&nbsp; Email:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;">&nbsp;{{Email}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Apt No.:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{Apt_UnitNo}}</td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;"><strong>&nbsp; Apt No.:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;">&nbsp;{{Apt_UnitNo}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Suburb:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{Suburb}}</td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;"><strong>&nbsp; Suburb:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;">&nbsp;{{Suburb}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; State:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{State}}</td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;"><strong>&nbsp; State:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;">&nbsp;{{State}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Post Code:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{Post_Code}}</td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;"><strong>&nbsp; Post Code:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;">&nbsp;{{Post_Code}}</td>
 </tr>
-<tr style="height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Type of Cleaning:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{TypeOfCleaning}}</td>
-</tr>
-<tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Service:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{ServiceType}}</td>
+<tr style="height: 34.2857px;">
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 34.2857px;"><strong>&nbsp; Type of Cleaning:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 34.2857px;">&nbsp;{{TypeOfCleaning}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; No.of Bed:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{No_of_Bed}}</td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;"><strong>&nbsp; Service:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;">&nbsp;{{ServiceType}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Hours:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{Hours}}</td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;"><strong>&nbsp; No.of Bed:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;">&nbsp;{{No_of_Bed}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Date:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;{{Date}}</td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;"><strong>&nbsp; Hours:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;">&nbsp;{{Hours}}</td>
 </tr>
 <tr style="border-collapse: collapse; height: 17.1429px;">
-<td style="padding: 0px; margin: 0px; color: rgb(0, 0, 0); font-size: 15px; width: 198.058px; height: 17.1429px;"><strong>&nbsp; Time:</strong></td>
-<td style="padding: 0px; margin: 0px; font-size: 15px; width: 299.799px; height: 17.1429px;">&nbsp;8AM - 5PM</td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;"><strong>&nbsp; Date:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;">&nbsp;{{Date}}</td>
 </tr>
-<tr style="border-collapse: collapse; height: 18.5714px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; color: rgb(63, 63, 63); width: 198.058px; height: 18.5714px;"><strong>&nbsp; Card No.:</strong></td>
-<td style="padding: 0px; margin: 0px; width: 299.799px; height: 18.5714px;">&nbsp;{{CardNo}}</td>
-</tr>
-<tr style="height: 18.5714px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; color: rgb(63, 63, 63); width: 198.058px; height: 18.5714px;"><strong>&nbsp; MM/YY:</strong></td>
-<td style="padding: 0px; margin: 0px; width: 299.799px; height: 18.5714px;">&nbsp;{{MM/YY}}</td>
-</tr>
-<tr style="height: 18.5714px;">
-<td style="padding: 0px; margin: 0px; font-size: 15px; color: rgb(63, 63, 63); width: 198.058px; height: 18.5714px;"><strong>&nbsp; CVC:</strong></td>
-<td style="padding: 0px; margin: 0px; width: 299.799px; height: 18.5714px;">&nbsp;{{CVC}}</td>
+<tr style="border-collapse: collapse; height: 17.1429px;">
+<td style="padding: 0px; margin: 0px; color: rgb(0, 0, 0); font-size: 15px; height: 17.1429px;"><strong>&nbsp; Time:</strong></td>
+<td style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px;">&nbsp;8AM - 7PM</td>
 </tr>
 </tbody>
 </table>
-<p style="margin: 10; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #3f3f3f; font-size: 14px;">EXTRAS:</p>
+<p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #3f3f3f; font-size: 14px;">&nbsp;</p>
+<p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #3f3f3f; font-size: 14px;">EXTRAS:</p>
 <table class="es-table" style="border-collapse: collapse; border-spacing: 0px; width: 500px; height: 317.422px;" role="presentation" border="1" cellspacing="1" cellpadding="1">
 <tbody>
 <tr style="border-collapse: collapse; height: 16.4286px;">
@@ -254,17 +452,24 @@ mso-hide:all;
 <td style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 243.326px;">&nbsp;<strong> Patio Clean:</strong></td>
 <td style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px; width: 254.531px;">&nbsp;{{Patio}}</td>
 </tr>
-</tbody>
+<!-- <tr style="border-collapse: collapse; height: 17.1429px;">
+<td
+style="padding: 0px; margin: 0px; font-size: 14px; height: 17.1429px; width: 243.326px;">
+&nbsp; <strong>Same Day Booking:</strong></td>
+<td
+style="padding: 0px; margin: 0px; font-size: 15px; height: 17.1429px; width: 254.531px;">
+&nbsp;{{Same_Day_Booking_Fee}}</td>
+</tr> --></tbody>
 </table>
 <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #333333; font-size: 14px;">&nbsp;</p>
 <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #3f3f3f; font-size: 14px;">IMPORTANT EXTRA INFORMATION</p>
-<table class="es-table" style="border-collapse: collapse; border-spacing: 0px; width: 500px; height: 32.8572px;" role="presentation" border="1" cellspacing="1" cellpadding="1">
+<table class="es-table" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px; width: 500px;" role="presentation" border="1" cellspacing="1" cellpadding="1">
 <tbody>
-<tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px;"><strong>&nbsp;Do you have pets?</strong></td>
+<tr style="border-collapse: collapse;">
+<td style="padding: 0; margin: 0; font-size: 14px;"><strong>&nbsp;Do you have pets?</strong></td>
 </tr>
-<tr style="border-collapse: collapse; height: 16.4286px;">
-<td style="padding: 0px; margin: 0px; font-size: 14px; height: 16.4286px;">&nbsp;{{Pets}}</td>
+<tr style="border-collapse: collapse;">
+<td style="padding: 0; margin: 0; font-size: 14px;">&nbsp;{{Pets}}</td>
 </tr>
 </tbody>
 </table>
@@ -346,8 +551,11 @@ mso-hide:all;
 <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #333333; font-size: 14px;">&nbsp;</p>
 </td>
 </tr>
-</tbody>
-</table>
+<tr style="border-collapse: collapse;">
+<td style="padding: 0; margin: 0;" align="center">
+<h2 style="margin: 0; line-height: 23px; mso-line-height-rule: exactly; font-family: Arial, sans-serif; font-size: 19px; font-style: normal; font-weight: normal; color: #191919;">&nbsp;</h2>
+<h2 style="margin: 0; line-height: 23px; mso-line-height-rule: exactly; font-family: Arial, sans-serif; font-size: 19px; font-style: normal; font-weight: normal; color: #000000;">WE&nbsp;WILL&nbsp;CONTACT&nbsp;YOU&nbsp;SHORTLY&nbsp;FOR&nbsp;</h2>
+<h2 style="margin: 0; line-height: 23px; mso-line-height-rule: exactly; font-family: Arial, sans-serif; font-size: 19px; font-style: normal; font-weight: normal; color: #000000;">THE&nbsp;CONFIRMATION</h2>
 </td>
 </tr>
 </tbody>
@@ -375,37 +583,37 @@ mso-hide:all;
 </tr>
 <tr style="border-collapse: collapse;">
 <td style="padding: 0; margin: 0; padding-bottom: 15px;" align="center">
-<table class="cke_show_border" style="border-collapse: collapse; border-spacing: 0px; width: 240px; height: 83.9732px;" role="presentation" border="0" cellspacing="1" cellpadding="1">
+<table class="cke_show_border" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px; width: 240px;" role="presentation" border="0" cellspacing="1" cellpadding="1">
 <tbody>
-<tr style="border-collapse: collapse; height: 20.9933px;">
-<td style="padding: 0px; margin: 0px; height: 20.9933px;">
+<tr style="border-collapse: collapse;">
+<td style="padding: 0; margin: 0;">
 <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #333333; font-size: 14px;"><strong>Subtotal:</strong></p>
 </td>
-<td style="padding: 0px; margin: 0px; text-align: right; height: 20.9933px;">
+<td style="padding: 0; margin: 0; text-align: right;">
 <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #333333; font-size: 14px;">${{Price}}</p>
 </td>
 </tr>
-<tr style="border-collapse: collapse; height: 20.9933px;">
-<td style="padding: 0px; margin: 0px; height: 20.9933px;">
+<tr style="border-collapse: collapse;">
+<td style="padding: 0; margin: 0;">
 <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #333333; font-size: 14px;"><strong>1.25% CC FEE:</strong></p>
 </td>
-<td style="padding: 0px; margin: 0px; text-align: right; height: 20.9933px;">
+<td style="padding: 0; margin: 0; text-align: right;">
 <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #333333; font-size: 14px;">${{CCFEE}}</p>
 </td>
 </tr>
-<tr style="border-collapse: collapse; height: 20.9933px;">
-<td style="padding: 0px; margin: 0px; height: 20.9933px;">
+<tr style="border-collapse: collapse;">
+<td style="padding: 0; margin: 0;">
 <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #333333; font-size: 14px;"><strong>First Service:</strong></p>
 </td>
-<td style="padding: 0px; margin: 0px; text-align: right; height: 20.9933px;">
+<td style="padding: 0; margin: 0; text-align: right;">
 <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #333333; font-size: 14px;">${{FirstService}}</p>
 </td>
 </tr>
-<tr style="border-collapse: collapse; height: 20.9933px;">
-<td style="padding: 0px; margin: 0px; font-size: 18px; line-height: 36px; height: 20.9933px;">
+<tr style="border-collapse: collapse;">
+<td style="padding: 0; margin: 0; font-size: 18px; line-height: 36px;">
 <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #333333; font-size: 14px;"><strong>Total:</strong></p>
 </td>
-<td style="padding: 0px; margin: 0px; text-align: right; font-size: 18px; line-height: 36px; height: 20.9933px;">
+<td style="padding: 0; margin: 0; text-align: right; font-size: 18px; line-height: 36px;">
 <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 21px; color: #333333; font-size: 14px;">${{total}}</p>
 </td>
 </tr>
@@ -436,7 +644,7 @@ mso-hide:all;
 <table class="es-footer-body" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px; background-color: transparent; width: 600px;" cellspacing="0" cellpadding="0" align="center">
 <tbody>
 <tr style="border-collapse: collapse;">
-<td style="padding: 20px; margin: 0; background-color: #1239ac;" align="left" bgcolor="#1239AC">
+<td style="padding: 20px; margin: 0; background-color: #1239ac;" align="left" bgcolor="#1239ac">
 <table style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px;" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
 <tr style="border-collapse: collapse;">
@@ -453,6 +661,10 @@ mso-hide:all;
 <tr style="border-collapse: collapse;">
 <td style="padding: 0; margin: 0; padding-top: 10px; padding-bottom: 10px;" align="center">
 <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family: Arial, sans-serif; line-height: 20px; color: #f5f5f5; font-size: 13px;"><em><span style="font-size: 11px; line-height: 17px;">You are receiving this email because you have visited our site and booked our service.</span></em></p>
+</td>
+</tr>
+</tbody>
+</table>
 </td>
 </tr>
 </tbody>

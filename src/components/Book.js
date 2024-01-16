@@ -2569,51 +2569,51 @@ const Book = ({ setAlert }) => {
             <IconContext.Provider value={{ color: "#1239ac", size: "18%" }}>
               <div className={styles.features}>
                 <MdOutlineTimer />
-                <h4>SAVING YOU VALUABLE TIME</h4>
+                <h4>SAVING YOUR VALUABLE TIME</h4>
                 <p>
-                  Spark Clean's booking system is designed to streamline your
-                  life, freeing up precious time for what truly matters.
+                  The booking system from us is made to simplify your life and
+                  free up valuable time for the things that count.
                 </p>
               </div>
               <div className={styles.features}>
                 <MdGppGood />
                 <h4>PRIORITIZING SAFETY</h4>
                 <p>
-                  Rest easy knowing that all our Cleaners undergo thorough
-                  vetting, including police checks and in-person interviews,
-                  ensuring your safety.
+                  You can relax knowing that our cleaners undergo a rigorous
+                  screening process that includes in-person interviews and
+                  police checks to ensure your safety.
                 </p>
               </div>
               <div className={styles.features}>
                 <AiOutlineLike />
                 <h4>TOP-NOTCH QUALITY</h4>
                 <p>
-                  Our skilled professionals consistently go above and beyond.
-                  After each task, Cleaners receive ratings and reviews,
-                  ensuring a commitment to excellence.
+                  Our experts always go above and beyond. To ensure a dedication
+                  to quality, Cleaners receive ratings and reviews following
+                  each task.
                 </p>
               </div>
               <div className={styles.features}>
                 <LiaHandsHelpingSolid />
                 <h4>HASSLE-FREE ASSISTANCE</h4>
                 <p>
-                  With just a few clicks—choose your postcode, specify hours and
-                  beds, select a date—sit back and relax as we take care of your
-                  home.
+                  Choose your postcode, the number of beds and hours, and the
+                  date with just a few clicks, then sit back and unwind while we
+                  care for your house.
                 </p>
               </div>
               <div className={styles.features}>
                 <MdConnectWithoutContact />
                 <h4>SEAMLESS CONNECTIVITY</h4>
                 <p>
-                  Stay in the loop effortlessly with your Cleaners through our
-                  user-friendly online communication platform.
+                  Easily stay informed about your Cleaners with our easy-to-use
+                  online communication tool.
                 </p>
               </div>
               <div className={styles.features}>
                 <RiVisaFill />
                 <h4>PAYMENT FLEXIBILITY</h4>
-                <p>Pay securely online only when the cleaning is complete.</p>
+                <p>Make your payment only when the cleaning is complete.</p>
               </div>
             </IconContext.Provider>
           </div>
