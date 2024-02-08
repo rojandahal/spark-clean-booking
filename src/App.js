@@ -11,7 +11,6 @@ function App() {
   const [alert, setAlert] = useState(false);
   return (
     <div>
-      <ScrollToTop />
       <AlertCustom
         alert={alert}
         setAlert={setAlert}

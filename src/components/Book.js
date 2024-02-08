@@ -601,8 +601,14 @@ const Book = ({ setAlert }) => {
     () => Math.ceil(parseInt(Price, 10) * 0.0125 * 100) / 100,
     [Price]
   );
+
+  // Memoized gst computation
+  const GST = useMemo(
+    () => Math.ceil(parseInt(Price, 10) * 0.1 * 100) / 100,
+    [Price]
+  );
   //
-  const FirstService = Price + CCFEE;
+  const FirstService = Number(Price + CCFEE + GST).toFixed(2);
 
   // eslint-disable-next-line
   initialPrice = Price;
@@ -646,7 +652,7 @@ const Book = ({ setAlert }) => {
   const total = useMemo(
     () => {
       if (Discount === "One Time Cleaning") {
-        const numericAfterDiscount = parseFloat(Price + CCFEE);
+        const numericAfterDiscount = parseFloat(Price + CCFEE + GST);
         return isNaN(numericAfterDiscount)
           ? 0
           : Number(numericAfterDiscount.toFixed(2));
@@ -658,7 +664,7 @@ const Book = ({ setAlert }) => {
       }
     },
     // eslint-disable-next-line
-    [afterDiscount, Price, Discount]
+    [afterDiscount, Price, Discount, GST]
   );
 
   const form = useRef();
@@ -2481,6 +2487,17 @@ const Book = ({ setAlert }) => {
                     />
                   </div>
                   <div className={styles.griditem}>
+                    <p>10% GST</p>
+                  </div>
+                  <div className={styles.griditem}>
+                    <p className={styles.right}>${GST}</p>
+                    <input
+                      hidden
+                      name='GST'
+                      value={GST}
+                    />
+                  </div>
+                  <div className={styles.griditem}>
                     <p>1.25% CC FEE</p>
                   </div>
                   <div className={styles.griditem}>
@@ -2645,6 +2662,17 @@ const Book = ({ setAlert }) => {
               </div>
               <div className={styles.griditem}>
                 <p className={styles.right}>${Price}</p>
+              </div>
+              <div className={styles.griditem}>
+                <p>10% GST</p>
+              </div>
+              <div className={styles.griditem}>
+                <p className={styles.right}>${GST}</p>
+                <input
+                  hidden
+                  name='GST'
+                  value={GST}
+                />
               </div>
               <div className={styles.griditem}>
                 <p>1.25% CC FEE</p>
